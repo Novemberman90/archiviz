@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  @extend %Montserrat-400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: $white;
+  &.lock {
+    overflow: hidden;
+  }
+}
+a {
+  color: inherit;
+}
+.main {
+  flex-grow: 1;
+}
+.container {
+  max-width: 1310px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
