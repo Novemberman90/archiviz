@@ -26,3 +26,20 @@ a {
   padding: 0 15px;
   margin: 0 auto;
 }
+.title-accent {
+  background-color: $blue;
+  padding: 10px 15px;
+  @extend %Montserrat-500, %uppercase;
+  display: inline-block;
+  margin-bottom: 20px;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: $blue;
+    height: 2px;
+    min-width: 100vw;
+    right: 0;
+    bottom: 0;
+  }
+}
