@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
+    padding: 10px 30px;
   }
   &__logo {
     display: inline-block;
@@ -158,7 +158,7 @@
       border: 7px solid rgba($color: $blue, $alpha: .6);
       top: 50%;
       transform: translateY(-50%);
-      left: 30%;
+      right: 30px;
       z-index: -1;
     }
     span {
@@ -222,6 +222,7 @@
       font-size: 65px;
       color: $white;
       text-shadow: 8px 8px 0px rgba(150, 150, 150, 0.3);
+      transform: translateY(50%);
     }
     
   }
@@ -244,6 +245,8 @@
     &:nth-child(even) {
       .last-proj__item-img {
         order: 1;
+        margin-right: 0;
+        margin-left: 80px;
         &::after {
            left: -40px;
         }
@@ -343,6 +346,16 @@
     justify-content: space-between;
     margin-bottom: 20px;
   }
+  &__logo {
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  &__logo-img {
+    width: 125px;
+    height: 75px;
+    object-fit: cover;
+  }
   &__item {
     max-width: 300px;
   }
@@ -351,10 +364,25 @@
     margin-bottom: 20px;
   }
   &__contact-link {
-    display: block;
     margin-bottom: 20px;
+  }
+  &__contact-link,
+  &__adress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     &:hover {
       color: $blue;
+      svg {
+        path {
+          fill: $blue;
+        }
+      }
+    }
+    svg {
+      path {
+        fill: $white;
+      }
     }
   }
   &__social-list {
@@ -363,6 +391,9 @@
     align-items: center;
   }
   &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     svg {
       path {
         fill: $white;

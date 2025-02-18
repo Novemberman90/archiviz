@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   position: relative;
+  overflow-x: hidden;
 }
 
 body {
@@ -22,8 +23,8 @@ a {
   flex-grow: 1;
 }
 .container {
-  max-width: 1310px;
-  padding: 0 15px;
+  max-width: 1240px;
+  padding: 0 30px;
   margin: 0 auto;
 }
 .title-accent {
@@ -41,5 +42,32 @@ a {
     min-width: 100vw;
     right: 0;
     bottom: 0;
+  }
+}
+
+@media (max-width: 1180px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    max-width: 720px;
+    padding: 0 15px;
+  }
+  .title-accent {
+    font-size: 18px;
+  }
+}
+@media (max-width: 748px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (max-width: 578px) {
+  .title-accent {
+    font-size: 16px;
   }
 }
