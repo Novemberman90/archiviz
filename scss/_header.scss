@@ -1,0 +1,74 @@
+
+.header {
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  min-height: 100%;
+
+  &__wrapper {
+    background-color: rgba($color: $dark, $alpha: .6);
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+  }
+
+  &__logo {
+    display: inline-block;
+  }
+
+  &__logo-img {
+    width: 125px;
+    height: 75px;
+    object-fit: cover;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px);
+    gap: 20px;
+  }
+
+  &__pretitle {
+    @extend %Montserrat-500;
+    font-size: 60px;
+  }
+
+  &__title {
+    @extend %Montserrat-500;
+    font-size: 80px;
+    line-height: 1.2;
+    position: relative;
+
+    &::before {
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      bottom: 0;
+      left: 0;
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: $white;
+    }
+  }
+
+  &__subtitle {
+    font-size: 22px;
+  }
+}
+
+

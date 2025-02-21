@@ -1,0 +1,100 @@
+.footer {
+  padding: 100px 0 50px;
+  background-color: $dark;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  &__logo {
+    margin-right: 10px;
+    display: inline-block;
+  }
+
+  &__logo-img {
+    width: 125px;
+    height: 75px;
+    object-fit: cover;
+  }
+
+  &__item {
+    max-width: 300px;
+  }
+
+  &__item-title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  &__contact-link {
+    margin-bottom: 20px;
+  }
+
+  &__contact-link,
+  &__adress {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &:hover {
+      color: $blue;
+
+      svg {
+        path {
+          fill: $blue;
+        }
+      }
+    }
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+  }
+
+  &__social-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: $blue;
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 20px;
+    border-top: 1px solid $white;
+  }
+
+  &__bottom-link {
+    font-size: 12px;
+
+    &:hover {
+      background-color: $blue;
+    }
+  }
+}

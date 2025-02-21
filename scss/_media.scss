@@ -40,11 +40,11 @@
   }
   .missions {
     padding: 75px 0;
+    &__content {
+      padding-top: 50px;
+    }
   }
   .addon {
-    &__inner {
-      margin-bottom: 50px;
-    }
     &__title {
       font-size: 20px;
       &::after {
