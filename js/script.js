@@ -54,9 +54,9 @@ const startAddonNumber = (elements)=> {
                 observer.disconnect(); // Отключаем после первого срабатывания
             }
         });
-    }, { threshold: 1.0 });
+    }, { threshold: 0.25 });
 
-    observer.observe(document.querySelector('.addon__template')); // Слежу за нужным или любым другим элементом в конце страницы
+    observer.observe(document.querySelector('.addon')); // Слежу за нужным или любым другим элементом в конце страницы
 
 })
 
