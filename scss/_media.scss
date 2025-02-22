@@ -102,6 +102,7 @@
     }
   }
   .service {
+    padding: 75px 0;
     &__inner {
       grid-template-columns: repeat(1, 1fr);
       gap: 25px;
@@ -273,6 +274,9 @@
     padding: 50px 0;
   }
   .gallery {
+    padding: 50px 0;
+  }
+  .service {
     padding: 50px 0;
   }
 }
