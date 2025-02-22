@@ -1,0 +1,38 @@
+
+.service {
+  padding: 100px 0;
+  background-color: $black-ligth;
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+  &__item {
+    flex: 0 0 25%;
+  }
+}
+
+.price {
+  padding: 0 15px 30px 15px;
+  border: 6px solid rgba($color: $blue, $alpha: .5);
+  text-align: center;
+  &:hover {
+    border: 6px solid rgba($color: $blue, $alpha: 1.0);
+  }
+  &__title {
+    @extend %Montserrat-500;
+    font-size: 22px;
+    padding: 35px 0 15px;
+  }
+  &__price-box {
+    font-size: 18px;
+  }
+  ul.price__list {
+    padding-top: 30px;
+  }
+  &__item {
+    padding: 8px 0;
+    font-size: 15px;
+    border-bottom: 1px solid $blue;
+  }
+}
