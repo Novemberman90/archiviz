@@ -123,6 +123,7 @@
 .last-proj {
   padding: 100px 0;
   background-color: $black-ligth;
+  overflow-x: hidden;
 
   &__list {
     counter-reset: number;

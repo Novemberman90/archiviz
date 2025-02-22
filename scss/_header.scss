@@ -7,6 +7,14 @@
 
   &__wrapper {
     background-color: rgba($color: $dark, $alpha: .6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    &--active {
+      background-color: $dark;
+    }
   }
 
   &__inner {
@@ -31,7 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 120px);
+    min-height: 100vh;
     gap: 20px;
   }
 

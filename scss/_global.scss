@@ -1,8 +1,7 @@
+
 html,
 body {
   height: 100%;
-  position: relative;
-  overflow-x: hidden;
 }
 
 body {
@@ -12,6 +11,8 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: $white;
+  background-color: $dark;
+  position: relative;
   &.lock {
     overflow: hidden;
   }

@@ -23,6 +23,18 @@ const openMenu = () => {
 }
 
 
+const headerScroll = () => {
+  const headerWrapper = document.querySelector('.header__wrapper');
+  const headerHeight = headerWrapper.offsetHeight;
+  const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+  if(scrollPosition > headerHeight + 50 ){
+    headerWrapper.classList.add('header__wrapper--active');
+  } else {
+     headerWrapper.classList.remove('header__wrapper--active');
+  }
+}
+window.addEventListener('scroll', headerScroll);
 
 const startAddonNumber = (elements)=> {
   const time = 2000;  // Общее время анимации в миллисекундах
@@ -46,17 +58,18 @@ const startAddonNumber = (elements)=> {
     });
     
 }
-    const observer = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                const elements = document.querySelectorAll('.addon__number');
-                startAddonNumber(elements);
-                observer.disconnect(); // Отключаем после первого срабатывания
-            }
-        });
-    }, { threshold: 0.25 });
 
-    observer.observe(document.querySelector('.addon')); // Слежу за нужным или любым другим элементом в конце страницы
+const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const elements = document.querySelectorAll('.addon__number');
+            startAddonNumber(elements);
+            observer.disconnect(); // Отключаем после первого срабатывания
+        }
+    });
+  }, { threshold: 0.25 });
+
+observer.observe(document.querySelector('.addon')); // Слежу за нужным или любым другим элементом в конце страницы
 
 })
 
