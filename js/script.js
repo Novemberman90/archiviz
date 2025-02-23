@@ -58,8 +58,9 @@ const startAddonNumber = (elements)=> {
     });
     
 }
-
-const observer = new IntersectionObserver((entries, observer) => {
+const addonElement = document.querySelector('.addon');
+  if (addonElement) {
+    const observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
             const elements = document.querySelectorAll('.addon__number');
@@ -67,9 +68,12 @@ const observer = new IntersectionObserver((entries, observer) => {
             observer.disconnect(); // Отключаем после первого срабатывания
         }
     });
-  }, { threshold: 0.25 });
+    
+    }, { threshold: 0.25 });
 
-observer.observe(document.querySelector('.addon')); // Слежу за нужным или любым другим элементом в конце страницы
+    observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
+  }
+
 
 })
 

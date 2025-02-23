@@ -108,6 +108,14 @@
       gap: 25px;
     }
   }
+  .contact {
+    &__info {
+      margin-bottom: 30px;
+    }
+    &__form {
+      flex: 0 0 100%;
+    }
+  }
   .footer {
     padding-top: 75px;
   }
@@ -227,6 +235,22 @@
       height: 300px;
     }
   }
+  .contact {
+    padding: 75px 0;
+  }
+  .form {
+    &__label {
+      flex-wrap: wrap;
+    }
+    &__input {
+      &--tel {
+        order: 1;
+      }
+      &--email {
+        order: 2;
+      }
+    }
+  }
   .footer {
     padding-top: 50px;
     &__inner {
@@ -270,13 +294,11 @@
     }
    }
   }
-  .about {
-    padding: 50px 0;
-  }
-  .gallery {
-    padding: 50px 0;
-  }
-  .service {
+  .about,
+  .gallery,
+  .service,
+  .contact
+   {
     padding: 50px 0;
   }
 }
