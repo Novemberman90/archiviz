@@ -73,7 +73,14 @@ const addonElement = document.querySelector('.addon');
 
     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
   }
-
+    var swiper = new Swiper(".last-proj-slider", {
+      spaceBetween: 80,
+      centeredSlides: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
 
 })
 

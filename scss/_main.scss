@@ -240,4 +240,44 @@
       margin-bottom: 0;
     }
   }
+
+  &__slider {
+    padding: 150px 0 0;
+
+  }
+
+  &__item.swiper-slide {
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    &:nth-child(even) {
+      .last-proj__item-img {
+        order: 0;
+        margin-right: 100px;
+        margin-left: 0px;
+  
+        &::after {
+          left: 40px;
+        }
+      }
+    }
+  }
+
+  .swiper-pagination-bullet {
+    width: 7px;
+    height: 3px;
+    background-color: $dark;
+    border-radius: 0;
+    border: 1px solid $blue;
+    opacity: 1;
+  }
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 14px;
+    background-color: $blue;
+  }
+}
+
+.last-proj-slider {
+  .last-proj__item-img {
+    margin-right: 100px;
+  }
 }
