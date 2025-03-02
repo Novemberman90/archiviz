@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ArchiViz | Головна</title>
+  <title>ArchiViz – Студія архітектури, дизайну та 3D-візуалізацій</title>
+  <meta name="description"
+    content="ArchiViz – професійна студія, що пропонує послуги архітектурного дизайну та 3D-візуалізацій для втілення ваших ідей у реальність.">
   <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<header class="header" style="background-image: url('./images/header-bg.avif');">
+<header class="header" style="background-image: url('./images/header-bg.avif');" id="header">
   <div class="header__wrapper">
     <div class="container header__inner">
       <a class="header__logo" href="./index.html">
@@ -47,6 +49,14 @@
           </ul>
         </div>
       </nav>
+      <a class="go-top" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px"
+          viewBox="0 0 22 22" version="1.1">
+          <path
+            d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+            fill="" />
+        </svg>
+      </a>
     </div>
   </div>
   <div class="container header__content">
@@ -67,7 +77,7 @@
             <p class="addon__contnet-title">Довірте нам рішення проєктних питань</p>
             <div class="addon__template" data-addon-counter>
               <div class="addon__item">
-                <div class="addon__number" data-addon-num="110" id="out1">0</div>
+                <div class="addon__number" data-addon-num="110">0</div>
                 <p class="addon__number-title">виконаних проєктів</p>
               </div>
               <div class="addon__item">
@@ -245,6 +255,7 @@
     </div>
   </div>
 </footer>
+
   <script src="./js/script.js"></script>
 </body>
 </html>

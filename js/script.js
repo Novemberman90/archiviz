@@ -3,25 +3,30 @@ window.addEventListener('DOMContentLoaded',()=>{
 
 const menuBtn = document.querySelector('.menu__btn');
 const menuBlock = document.querySelector('.menu__block');
-
+const goTop = document.querySelector('.go-top');
 
 menuBtn.addEventListener('click', ()=>{
   menuBtn.classList.toggle('menu__btn--active');
   openMenu()
 });
 
-
-const closeMune = () => {
-  document.body.classList.remove('lock');
-  menuBtn.classList.remove('menu__btn--active');
-  menuList.classList.remove('menu__list--active');
+const toTop = ()=>{
+  const header = document.getElementById('header');
+  
+  goTop.addEventListener('click', (e)=>{
+    e.preventDefault();
+    const top = header.getBoundingClientRect().top + window.scrollY;
+    window.scrollTo({
+      top: top,
+      behavior: "smooth"
+    });
+  })
 }
 
 const openMenu = () => {
   document.body.classList.toggle('lock');
   menuBlock.classList.toggle('menu__block--active');
 }
-
 
 const headerScroll = () => {
   const headerWrapper = document.querySelector('.header__wrapper');
@@ -30,30 +35,32 @@ const headerScroll = () => {
 
   if(scrollPosition > headerHeight + 50 ){
     headerWrapper.classList.add('header__wrapper--active');
+    goTop.classList.add('go-top--active');
+    toTop();
   } else {
      headerWrapper.classList.remove('header__wrapper--active');
+     goTop.classList.remove('go-top--active');
   }
+
 }
 window.addEventListener('scroll', headerScroll);
 
 const startAddonNumber = (elements)=> {
   const time = 2000;  // Общее время анимации в миллисекундах
-  const step = 1; // Шаг увеличения числа
 
     elements.forEach(item => {
       
       let n = 0; // Начальное значение счётчик
       let num = parseInt(item.dataset.addonNum) || 0; // значение в атрибуте 
-      let t = Math.round(time / num); // Вычисляем интервал обновления числа
+      let stepTime = Math.round(time / num); // Вычисляем интервал обновления числа
 
       let interval = setInterval(() => {
-        n += step; // Увеличиваем текущее число на 1
-        item.innerHTML = n; // Обновляю текст в элементе
+        item.textContent = ++n; // Обновляю текст в элементе
 
         if (n >= num) { //Остановка, когда достигнем нужного числа
           clearInterval(interval)
         } 
-      }, t);
+      }, stepTime);
       
     });
     
@@ -73,14 +80,6 @@ const addonElement = document.querySelector('.addon');
 
     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
   }
-    var swiper = new Swiper(".last-proj-slider", {
-      spaceBetween: 80,
-      centeredSlides: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    });
 
 })
 

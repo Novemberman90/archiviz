@@ -51,6 +51,32 @@ a {
     bottom: 0;
   }
 }
+.go-top {
+  display: none;
+  width: 50px;
+  height: 50px;
+  background-color: rgba($color: $blue, $alpha: .6);
+  position: fixed;
+  z-index: 10;
+  bottom: 20px;
+  right:20px;
+  &--active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  svg{
+    path {
+      fill: $white;
+    }
+  }
+  &:hover {
+    background-color: rgba($color: $blue, $alpha: 1);
+  }
+  &:active {
+    background-color: rgba($color: $blue, $alpha: .5);
+  }
+}
 
 @media (max-width: 1180px) {
   .container {
