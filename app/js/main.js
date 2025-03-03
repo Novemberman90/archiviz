@@ -45,22 +45,6 @@ window.addEventListener('scroll', headerScroll);
 /* Счетчик */
 const startAddonNumber = (elements)=> {
   const time = 2000;  // Общее время анимации в миллисекундах
-
-   /*  elements.forEach(item => {
-      
-      let n = 0; // Начальное значение счётчик
-      let num = parseInt(item.dataset.addonNum) || 0; // значение в атрибуте 
-      let stepTime = Math.round(time / num); // Вычисляем интервал обновления числа
-
-      let interval = setInterval(() => {
-        item.textContent = ++n; // Обновляю текст в элементе
-
-        if (n >= num) { //Остановка, когда достигнем нужного числа
-          clearInterval(interval)
-        } 
-      }, stepTime);
-      
-    }); */
     
     elements.forEach(item => {
         let startTime;
@@ -97,5 +81,6 @@ const addonElement = document.querySelector('.addon');
     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
   }
 
+  new WOW().init();
 })
 

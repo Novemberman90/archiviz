@@ -6,7 +6,7 @@
   <title>ArchiViz – Студія архітектури, дизайну та 3D-візуалізацій</title>
   <meta name="description"
     content="ArchiViz – професійна студія, що пропонує послуги архітектурного дизайну та 3D-візуалізацій для втілення ваших ідей у реальність.">
-  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
 <header class="header" style="background-image: url('./images/header-bg.avif');" id="header">
@@ -59,7 +59,7 @@
       </a>
     </div>
   </div>
-  <div class="container header__content">
+  <div class="container header__content wow animate__fadeIn">
     <p class="header__pretitle">
       МИ
     </p>
@@ -72,9 +72,9 @@
     <div class="container">
       <div class="addon">
         <div class="addon__inner">
-          <h2 class="addon__title"><span>ArchiViz</span> - <br>студія сучасного <br> дизайну та архітектури</h2>
+          <h2 class="addon__title wow animate__fadeInLeft"><span>ArchiViz</span> - <br>студія сучасного <br> дизайну та архітектури</h2>
           <div class="addon__contnet">
-            <p class="addon__contnet-title">Довірте нам рішення проєктних питань</p>
+            <p class="addon__contnet-title wow animate__fadeInLeft">Довірте нам рішення проєктних питань</p>
             <div class="addon__template" data-addon-counter>
               <div class="addon__item">
                 <div class="addon__number" data-addon-num="110">0</div>
@@ -93,16 +93,16 @@
         </div>
       </div>
       <div class="missions__content">
-        <h3 class="title-accent">наша місія</h3>
+        <h3 class="title-accent animate__animated animate__fadeIn">наша місія</h3>
         <p class="missions__text">Створювати красивий, функцональний інтер'єр вашої мріїі, який базується на індивідульному підході. Найвища нгорода - це бачити втілений проєкт в життя та радість в очах замоника</p>
       </div>
     </div>
   </section>
   <section class="last-proj">
     <div class="container">
-      <h3 class="title-accent">останні проєкти</h3>
+      <h3 class="title-accent wow animate__fadeInLeft">останні проєкти</h3>
       <ul class="last-proj__list">
-        <li class="last-proj__item">
+        <li class="last-proj__item wow animate__fadeInLeft">
           <a class="last-proj__item-img" href="#" rel="noopener noreferrer">
             <img src="./images/last-project/israel-1.avif" alt="flat desing">
           </a>
@@ -121,7 +121,7 @@
             </ul>
           </div>
         </li>
-        <li class="last-proj__item">
+        <li class="last-proj__item wow animate__fadeInLeft">
           <a class="last-proj__item-img" href="#" rel="noopener noreferrer">
             <img src="./images/last-project/israel-1.avif" alt="flat desing">
           </a>
@@ -140,7 +140,7 @@
             </ul>
           </div>
         </li>
-        <li class="last-proj__item">
+        <li class="last-proj__item wow animate__fadeInLeft">
           <a class="last-proj__item-img" href="#" rel="noopener noreferrer">
             <img src="./images/last-project/israel-1.avif" alt="flat desing">
           </a>
@@ -172,7 +172,7 @@
       <div class="footer__item footer__social">
         <h4 class="footer__item-title">Ми в соц.мережах:</h4>
         <ul class="footer__social-list">
-          <li class="footer__social-item">
+          <li class="footer__social-item wow animate__fadeInUp" >
             <a class="footer__social-link" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="26px" height="26px"
               viewBox="0 0 26 26" version="1.1">
@@ -182,7 +182,7 @@
             </svg>
         </a>
           </li>
-          <li class="footer__social-item">
+          <li class="footer__social-item wow animate__fadeInUp" data-wow-delay=".1s">
             <a class="footer__social-link" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="24px"
                 viewBox="0 0 15 24" version="1.1">
@@ -192,7 +192,7 @@
               </svg>
             </a>
           </li>
-          <li class="footer__social-item">
+          <li class="footer__social-item wow animate__fadeInUp" data-wow-delay=".2s">
             <a class="footer__social-link" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
                 viewBox="0 0 24 24" version="1.1">
@@ -205,7 +205,7 @@
               </svg>
             </a>
           </li>
-          <li class="footer__social-item">
+          <li class="footer__social-item wow animate__fadeInUp" data-wow-delay=".3s">
             <a class="footer__social-link" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27px" height="24px"
                 viewBox="0 0 27 24" version="1.1">
@@ -219,7 +219,7 @@
       </div>
       <div class="footer__item footer__contact">
         <h4 class="footer__item-title">Контакти</h4>
-        <a class="footer__contact-link" href="tel:+380966059033">
+        <a class="footer__contact-link wow animate__fadeIn" href="tel:+380966059033">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
             viewBox="0 0 24 24" version="1.1">
             <path
@@ -227,7 +227,7 @@
               fill="" />
           </svg>
           <span>+38 096 605-90-33</span></a>
-        <a class="footer__contact-link" href="mailto:archiviz.biz@gmail.com">
+        <a class="footer__contact-link wow animate__fadeIn"  data-wow-delay=".1s" href="mailto:archiviz.biz@gmail.com">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
             viewBox="0 0 24 24" version="1.1">
             <path
@@ -235,7 +235,7 @@
               fill="" />
           </svg>
            <span>archiviz.biz@gmail.com</span></a>
-        <address class="footer__adress">
+        <address class="footer__adress wow animate__fadeIn"  data-wow-delay=".2s">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px"
             viewBox="0 0 24 32" version="1.1">
             <path
@@ -249,13 +249,13 @@
         </address>
       </div>
     </div>
-    <div class="footer__bottom">
+    <div class="footer__bottom wow animate__fadeIn">
       <a class="footer__bottom-link" href="#">Copyright @ 2024 Архитектурная студия ArchiViz</a>
       <a class="footer__bottom-link" href="#">view code</a>
     </div>
   </div>
 </footer>
 
-  <script src="./js/script.js"></script>
+  <script src="./js/main.min.js"></script>
 </body>
 </html>
