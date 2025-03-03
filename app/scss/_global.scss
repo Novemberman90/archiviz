@@ -7,7 +7,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  @extend %Montserrat-400;
+  @extend %Montserrat-300;
   font-size: 16px;
   line-height: 1.4;
   color: $white;

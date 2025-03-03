@@ -37,6 +37,8 @@
   }
   &__content-box {
     p {
+      letter-spacing: .04em;
+      @extend %Montserrat-300;
       font-size: 12px;
     }
   }
@@ -54,6 +56,41 @@
     &:hover {
       transition: all .4s;
       transform: translateX(50%);
+    }
+  }
+}
+
+@media (max-width: 1180px) {
+  .project {
+    &__inner {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .project {
+    padding: 75px 0 50px;
+  }
+}
+
+@media (max-width: 748px) {
+  .project {
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+@media (max-width: 578px) {
+  .project {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 440px) {
+  .project {
+    &__inner {
+      grid-auto-rows: 300px;
     }
   }
 }

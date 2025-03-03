@@ -15,7 +15,7 @@
     padding-top: 25px;
     p {
       margin-bottom: 25px;
-  
+      letter-spacing: .04em;
       &:last-child {
         margin-bottom: 0;
       }
@@ -81,5 +81,55 @@
     opacity: 0;
     transition: all .3s;
     border-radius: 3px;
+  }
+}
+
+@media (max-width: 990px) {
+  .about {
+    &__inner {
+      justify-content: center;
+    }
+
+    &__content {
+      flex: 0 0 100%;
+      margin-right: 0;
+      margin-bottom: 40px;
+    }
+  }
+    
+  .gallery {
+    padding-top: 75px 0;
+
+    &__inner {
+      gap: 15px 15px;
+    }
+
+    &__item {
+      height: 220px;
+    }
+  }
+}
+
+@media (max-width: 748px) {
+  .about {
+      padding: 75px 0;
+    }
+    
+  .gallery {
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px 0;
+    }
+
+    &__item {
+      height: 300px;
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .about,
+  .gallery {
+    padding: 50px 0;
   }
 }

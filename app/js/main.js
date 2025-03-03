@@ -81,6 +81,7 @@ const addonElement = document.querySelector('.addon');
     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
   }
 
+  /* Анимация */
   new WOW().init();
 })
 

@@ -9,6 +9,12 @@
   }
   &__item {
     flex: 0 0 25%;
+    p{
+      letter-spacing: .04em;
+      &::first-letter{
+        text-transform: capitalize;
+      }
+    }
   }
 }
 
@@ -34,5 +40,21 @@
     padding: 8px 0;
     font-size: 15px;
     border-bottom: 1px solid $blue;
+  }
+}
+
+@media (max-width:990px) {
+  .service {
+    padding: 75px 0;
+
+    &__inner {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 25px;
+    }
+  }
+}
+@media (max-width: 578px) {
+  .service {
+    padding: 50px 0;
   }
 }

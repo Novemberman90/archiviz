@@ -98,3 +98,20 @@
     }
   }
 }
+
+@media (max-width: 990px) {
+  .footer {
+    padding-top: 75px;
+  }
+}
+
+@media (max-width: 748px) {
+  .footer {
+    padding-top: 50px;
+
+    &__inner {
+      flex-wrap: wrap;
+      gap: 50px 0;
+    }
+  }
+}

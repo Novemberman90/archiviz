@@ -97,3 +97,43 @@
     }
   }
 }
+
+
+@media (max-width: 990px) {
+  .contact {
+    &__info {
+      margin-bottom: 50px;
+    }
+
+    &__form {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+@media (max-width: 748px) {
+  .contact {
+    padding: 75px 0;
+  }
+  .form {
+    &__label {
+      flex-wrap: wrap;
+    }
+
+    &__input {
+      &--tel {
+        order: 1;
+      }
+
+      &--email {
+        order: 2;
+      }
+    }
+  }
+}
+
+@media (max-width: 578px) {
+  .contact {
+    padding: 50px 0;
+  }
+}

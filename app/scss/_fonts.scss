@@ -36,6 +36,15 @@
     url('../fonts/Montserrat-Regular.woff') format('woff');
   font-display: swap;
 }
+@font-face {
+  font-family: 'Montserrat-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: local('Montserrat-Light'),
+    url('../fonts/Montserrat-Light.woff2') format('woff2'),
+    url('../fonts/Montserrat-Light.woff') format('woff');
+  font-display: swap;
+}
 
 
 
