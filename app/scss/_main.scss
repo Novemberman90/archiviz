@@ -202,7 +202,7 @@
       position: absolute;
       content: '0' counter(number);
       counter-increment: number;
-      @extend %Montserrat-800;
+      @extend %Montserrat-700;
       line-height: 1;
       font-size: 240px;
       opacity: .1;
