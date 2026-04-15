@@ -9,65 +9,67 @@
   <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
-<header class="header" style="background-image: url('./images/header-bg.avif');" id="header">
+<header class="header" id="header">
   <div class="header__wrapper">
-    <div class="container header__inner">
-      <a class="header__logo" href="./index.html">
-        <img class="header__logo-img" src="./images/icon/header-logo.svg" alt="logo archiviz">
-      </a>
-      <nav class="menu">
-        <button class="menu__btn">
-        </button>
-        <div class="menu__block">
-          <ul class="menu__list">
-            <li class="menu__item">
-              <a href="./index.html" class="menu__link menu__link--active">Головна</a>
-            </li>
-            <li class="menu__item">
-              <a href="./about.html" class="menu__link">Про нас</a>
-            </li>
-            <li class="menu__item">
-              <a href="./services.html" class="menu__link">Послуги</a>
-            </li>
-            <li class="menu__item">
-              <a href="./projects.html" class="menu__link">Проєкти</a>
-            </li>
-            <li class="menu__item">
-              <a href="./contact.html" class="menu__link">Контакти</a>
-            </li>
-          </ul>
-          <ul class="menu__lang-list">
-            <li class="menu__lang-item">
-              <a href="#" class="menu__lang-link menu__lang-link--active">Ua</a>
-            </li>
-            <li class="menu__lang-item">
-              <a href="#" class="menu__lang-link">En</a>
-            </li>
-            <li class="menu__lang-item">
-              <a href="#" class="menu__lang-link">Ru</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <a class="go-top" href="#">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px"
-          viewBox="0 0 22 22" version="1.1">
-          <path
-            d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
-            fill="" />
-        </svg>
-      </a>
+    <div class="container">
+      <div class="header__inner">
+        <a class="header__logo" href="./index.html">
+          <img class="header__logo-img" src="./images/icon/header-logo.svg" alt="logo archiviz">
+        </a>
+        <nav class="menu">
+          <button class="menu__btn">
+          </button>
+          <div class="menu__block">
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="./index.html" class="menu__link menu__link--active">Головна</a>
+              </li>
+              <li class="menu__item">
+                <a href="./about.html" class="menu__link">Про нас</a>
+              </li>
+              <li class="menu__item">
+                <a href="./services.html" class="menu__link">Послуги</a>
+              </li>
+              <li class="menu__item">
+                <a href="./projects.html" class="menu__link">Проєкти</a>
+              </li>
+              <li class="menu__item">
+                <a href="./contact.html" class="menu__link">Контакти</a>
+              </li>
+              <li class="menu__item">
+                <a href="./contact.html" class="menu__link">Блог</a>
+              </li>
+            </ul>
+            <ul class="menu__lang-list">
+              <li class="menu__lang-item">
+                <a href="#" class="menu__lang-link menu__lang-link--active">Ua</a>
+              </li>
+              <li class="menu__lang-item">
+                <a href="#" class="menu__lang-link">En</a>
+              </li>
+              <li class="menu__lang-item">
+                <a href="#" class="menu__lang-link">Ru</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
     </div>
-  </div>
-  <div class="container header__content">
-    <p class="header__pretitle">
-      МИ
-    </p>
-    <h1 class="header__title animate__animated animate__fadeIn">ЛАМАЄМО СТЕРЕОТИПИ</h1>
-    <p class="header__subtitle">Студия архитектуры, дизайна и 3D-визуализаций ArchiViz</p>
   </div>
 </header>
 <main class="main">
+  <section class="hero">
+    <div class="hero__bg" style="background-image: url('./images/header-bg.avif');"></div>
+    <div class="container">
+      <div class="hero__content">
+        <p class="hero__pretitle">
+          МИ
+        </p>
+        <p class="hero__title animate__animated animate__fadeIn">ЛАМАЄМО СТЕРЕОТИПИ</p>
+        <h1 class="hero__subtitle">Студия архитектуры, дизайна и 3D-визуализаций ArchiViz</h1>
+      </div>
+    </div>
+  </section>
   <section class="missions">
     <div class="container">
       <div class="addon">
@@ -101,6 +103,11 @@
   <section class="last-proj">
     <div class="container">
       <h3 class="title-accent wow animate__fadeInLeft">останні проєкти</h3>
+      <div class="last-proj__descr">
+        <p>
+          Ми в ArchiViz завжди прагнемо досягти найвищої якості у кожному проєкті, який ми реалізуємо. Наша команда професіоналів працює над тим, щоб кожен клієнт отримав індивідуальний підхід та результат, який перевищить його очікування. Ми віримо, що кожен проєкт - це можливість створити щось унікальне та неповторне, і ми завжди готові прийняти цей виклик.
+        </p>
+      </div>
       <ul class="last-proj__list">
         <li class="last-proj__item wow animate__fadeInLeft">
           <a class="last-proj__item-img" href="#" rel="noopener noreferrer">
@@ -110,15 +117,27 @@
             <h4 class="last-proj__item-title">Будинок в Ізраїлі</h4>
             <ul class="last-proj__sub-list">
               <li class="last-proj__sub-item">
-                Тип: <span>Квартира</span>
+                <span>Тип:</span> <span>Квартира</span>
               </li>
               <li class="last-proj__sub-item">
-                Місце: <span>Київ, Україна</span>
+                <span></span>Місце:</span> <span>Київ, Україна</span>
               </li>
               <li class="last-proj__sub-item">
-                Площа: <span>100</span>m2
+                <span></span>Площа:</span> <span>100 m2</span>
+              </li>
+              <li class="last-proj__sub-item">
+                <span></span>Стиль:</span> <span>Модерн</span>
               </li>
             </ul>
+            <a class="last-proj__link" href="freezing.html">
+              <span>Детальніше</span>
+              <svg class="last-proj__link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+            </a>
           </div>
         </li>
         <li class="last-proj__item wow animate__fadeInLeft">
@@ -129,15 +148,27 @@
             <h4 class="last-proj__item-title">Будинок в Ізраїлі</h4>
             <ul class="last-proj__sub-list">
               <li class="last-proj__sub-item">
-                Тип: <span>Квартира</span>
+                <span>Тип:</span> <span>Квартира</span>
               </li>
               <li class="last-proj__sub-item">
-                Місце: <span>Київ, Україна</span>
+                <span></span>Місце:</span> <span>Київ, Україна</span>
               </li>
               <li class="last-proj__sub-item">
-                Площа: <span>100</span>m2
+                <span></span>Площа:</span> <span>100 m2</span>
+              </li>
+              <li class="last-proj__sub-item">
+                <span></span>Стиль:</span> <span>Модерн</span>
               </li>
             </ul>
+            <a class="last-proj__link" href="freezing.html">
+              <span>Детальніше</span>
+              <svg class="last-proj__link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+            </a>
           </div>
         </li>
         <li class="last-proj__item wow animate__fadeInLeft">
@@ -148,18 +179,46 @@
             <h4 class="last-proj__item-title">Будинок в Ізраїлі</h4>
             <ul class="last-proj__sub-list">
               <li class="last-proj__sub-item">
-                Тип: <span>Квартира</span>
+                <span>Тип:</span> <span>Квартира</span>
               </li>
               <li class="last-proj__sub-item">
-                Місце: <span>Київ, Україна</span>
+                <span></span>Місце:</span> <span>Київ, Україна</span>
               </li>
               <li class="last-proj__sub-item">
-                Площа: <span>100</span>m2
+                <span></span>Площа:</span> <span>100 m2</span>
+              </li>
+              <li class="last-proj__sub-item">
+                <span></span>Стиль:</span> <span>Модерн</span>
               </li>
             </ul>
+            <a class="last-proj__link" href="freezing.html">
+              <span>Детальніше</span>
+              <svg class="last-proj__link-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                <path
+                  d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                  fill="" />
+              </svg>
+            </a>
           </div>
         </li>
       </ul>
+    </div>
+  </section>
+  <section class="order-form">
+    <div class="container">
+      <h3 class="title-accent wow animate__fadeInLeft">Залиште заявку</h3>
+      <form class="form" action="#">
+        <label class="form__label">
+          <input class="form__input form__input--name" type="text" placeholder="Ім'я">
+        </label>
+        <label class="form__label">
+          <input class="form__input form__input--email" type="email" placeholder="Email">
+          <input class="form__input form__input--tel" type="tel" placeholder="+380">
+        </label>
+        <textarea class="form__textarea" placeholder="Повідомлення"></textarea>
+        <button class="form__submit" type="button">Відправити</button>
+      </form>
     </div>
   </section>
 </main>
@@ -255,6 +314,53 @@
     </div>
   </div>
 </footer>
+
+  <a class="go-top" href="#hero">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px"
+      viewBox="0 0 22 22" version="1.1">
+      <path
+        d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+        fill="" />
+    </svg>
+  </a>
+  
+  <div class="contact-wiget">
+    <a class="contact-wiget__link-item" href="mailto:korielsales@gmail.com">
+      <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+          fill="" />
+        <path
+          d="M44.5 24H23.5C22.1193 24 21 25.1193 21 26.5V41.5C21 42.8807 22.1193 44 23.5 44H44.5C45.8807 44 47 42.8807 47 41.5V26.5C47 25.1193 45.8807 24 44.5 24Z"
+          stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M25 28L34 35L43 28" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+    </a>
+    <a class="contact-wiget__link-item" href="tel:+380673560410">
+      <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 34C0 15.2223 15.2223 0 34 0C52.7777 0 68 15.2223 68 34C68 52.7777 52.7777 68 34 68C15.2223 68 0 52.7777 0 34Z"
+          fill="" />
+        <path
+          d="M45.2509 40.8062C44.3347 39.8832 42.1158 38.5361 41.0393 37.9933C39.6373 37.2871 39.5219 37.2294 38.42 38.0481C37.6849 38.5944 37.1963 39.0824 36.3361 38.899C35.4759 38.7155 33.6066 37.6811 31.9698 36.0497C30.333 34.4182 29.2386 32.4948 29.0545 31.6376C28.8705 30.7803 29.3667 30.2974 29.9078 29.5607C30.6705 28.5223 30.6129 28.3492 29.9609 26.9474C29.4526 25.857 28.0663 23.6591 27.1397 22.7476C26.1485 21.7686 26.1485 21.9416 25.5098 22.207C24.9899 22.4258 24.4911 22.6917 24.0196 23.0014C23.0965 23.6146 22.5842 24.124 22.2259 24.8896C21.8676 25.6551 21.7067 27.4499 23.5569 30.8109C25.4071 34.1719 26.7053 35.8905 29.3921 38.5696C32.0788 41.2487 34.1449 42.6892 37.1651 44.383C40.9014 46.4754 42.3345 46.0675 43.1024 45.7098C43.8703 45.3522 44.382 44.8445 44.9965 43.9215C45.307 43.4508 45.5735 42.9526 45.7926 42.4331C46.0586 41.7967 46.2317 41.7967 45.2509 40.8062Z"
+          stroke="" stroke-width="2" stroke-miterlimit="10" />
+      </svg>
+    </a>
+  </div>
+  
+  <div class="cookie is-show" id="cookie">
+    <div class="cookie__inner">
+      <p class="cookie__text">Ми використовуємо <a href="privacy-polic.html" target="_blank"
+          rel="noopener noreferrer">файли cookie</a> для покращення вашого досвіду на нашому сайті. Продовжуючи
+        користуватися сайтом, ви погоджуєтеся з нашою політикою конфіденційності та використанням файлів cookie.</p>
+  
+      <div class="cookie__button-box">
+        <button class="cookie__button cookie__button--accept" type="button">Прийняти</button>
+        <button class="cookie__button cookie__button--decline" type="button">Відхилити</button>
+      </div>
+    </div>
+  </div>
+
   <script src="./js/main.min.js"></script>
 </body>
 </html>
