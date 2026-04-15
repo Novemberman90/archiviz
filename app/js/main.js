@@ -30,13 +30,16 @@ const headerScroll = () => {
   const headerWrapper = document.querySelector('.header__wrapper');
   const headerHeight = headerWrapper.offsetHeight;
   const scrollPosition = window.scrollY || document.documentElement.scrollTop;
+  const contactWiget = document.querySelector('.contact-wiget');
 
   if(scrollPosition > headerHeight + 50 ){
     headerWrapper.classList.add('header__wrapper--active');
     goTop.classList.add('go-top--active');
+    contactWiget.classList.add('contact-wiget--active'); 
   } else {
      headerWrapper.classList.remove('header__wrapper--active');
      goTop.classList.remove('go-top--active');
+     contactWiget.classList.remove('contact-wiget--active'); 
   }
 
 }
@@ -83,5 +86,28 @@ const addonElement = document.querySelector('.addon');
 
   /* Анимация */
   new WOW().init();
+
+  const cookie = document.getElementById('cookie');
+  
+    if (cookie) {
+      const acceptBtn = cookie.querySelector('.cookie__button--accept');
+      const closeBtn = cookie.querySelector('.cookie__button--decline');
+      const COOKIE_KEY = 'cookieConsent';
+  
+      if (localStorage.getItem(COOKIE_KEY) === null) {
+        setTimeout(() => cookie.classList.add('is-show'), 4000);
+      }
+  
+      acceptBtn?.addEventListener('click', () => {
+        localStorage.setItem(COOKIE_KEY, 'true');
+        cookie.classList.remove('is-show');
+      });
+  
+      closeBtn?.addEventListener('click', () => {
+        localStorage.setItem(COOKIE_KEY, 'false');
+        cookie.classList.remove('is-show');
+      });
+    }
+
 })
 

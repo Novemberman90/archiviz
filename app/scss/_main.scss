@@ -5,9 +5,8 @@
   &__content {
     padding-top: 100px;
     p {
-      font-size: 14px;
+      font-size: 16px;
       @extend %Montserrat-500;
-      color: $blue;
       padding: 20px 0 0 0;
     }
   }
@@ -124,6 +123,20 @@
   padding: 100px 0;
   background-color: $black-ligth;
   overflow-x: hidden;
+  &__descr {
+    margin-bottom: 50px;
+    p {
+      font-size: 16px;
+      @extend %Montserrat-500;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    a {
+      color: $blue;
+    }
+  }
 
   &__list {
     counter-reset: number;
@@ -230,6 +243,9 @@
       transition: all .3s
     }
   }
+  ul.last-proj__sub-list {
+    margin-bottom: 20px;
+  }
 
   &__sub-item {
     font-size: 14px;
@@ -241,47 +257,36 @@
     }
   }
 
-  &__slider {
-    padding: 150px 0 0;
+  &__link {
+    color: $blue;
+    font-size: 16px;
+    transition: all .3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 
-  }
-
-  &__item.swiper-slide {
-    margin-bottom: 0;
-    padding-bottom: 100px;
-    &:nth-child(even) {
-      .last-proj__item-img {
-        order: 0;
-        margin-right: 100px;
-        margin-left: 0px;
-  
-        &::after {
-          left: 40px;
-        }
+    &:hover {
+      .last-proj__link-icon {
+        transform: translateX(5px) rotate(90deg);
       }
+    }
+
+    &:active {
+      opacity: .7;
     }
   }
 
-  .swiper-pagination-bullet {
-    width: 7px;
-    height: 3px;
-    background-color: $dark;
-    border-radius: 0;
-    border: 1px solid $blue;
-    opacity: 1;
-  }
-  .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    width: 14px;
-    background-color: $blue;
+  &__link-icon {
+    position: relative;
+    transform: rotate(90deg);
+    transition: transform .3s ease, fill .3s ease;
+
+    path {
+      fill: $blue;
+      transition: fill .3s ease;
+    }
   }
 }
-
-.last-proj-slider {
-  .last-proj__item-img {
-    margin-right: 100px;
-  }
-}
-
 
 @media (max-width: 1180px) {
   .addon {
@@ -388,7 +393,13 @@
     
   .last-proj {
     padding: 50px 0;
-
+    &__descr {
+      margin-bottom: 30px;
+      font-size: 14px;
+      p {
+        margin-bottom: 10px;
+      }
+    }
     &__item {
       margin-bottom: 50px;
     }

@@ -25,7 +25,7 @@ a {
 }
 .container {
   max-width: 1240px;
-  padding: 0 30px;
+  padding: 0 20px;
   margin: 0 auto;
 }
 .container-fluid {
@@ -60,6 +60,7 @@ a {
   z-index: 10;
   bottom: 20px;
   right:20px;
+  transition: all 0.3s;
   &--active {
     display: flex;
     justify-content: center;
@@ -67,6 +68,7 @@ a {
   }
   svg{
     path {
+      transition: all 0.3s;
       fill: $white;
     }
   }
@@ -78,24 +80,58 @@ a {
   }
 }
 
-@media (max-width: 1180px) {
-  .container {
-    max-width: 960px;
+.contact-wiget {
+  display: none;
+  width: fit-content;
+  gap: 10px;
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  z-index: 10;
+
+  &--active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
+
+  &__link-item {
+    svg {
+      width: 50px;
+      height: 50px;
+
+      path {
+        transition: all 0.3s;
+        fill: $blue;
+        stroke: $dark;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          transition: all 0.3s;
+          fill: $blue;
+          stroke: $white;
+        }
+      }
+    }
+  }
+}
+
+.order-form {
+  padding: 100px 0 50px;
 }
 
 @media (max-width: 990px) {
   .container {
-    max-width: 720px;
     padding: 0 15px;
   }
   .title-accent {
     font-size: 18px;
   }
-}
-@media (max-width: 748px) {
-  .container {
-    max-width: 540px;
+  .order-form {
+    padding: 75px 0 50px;
   }
 }
 
@@ -103,5 +139,8 @@ a {
   .title-accent {
     font-size: 16px;
     margin-bottom: 25px;
+  }
+  .order-form {
+    padding: 50px 0;
   }
 }

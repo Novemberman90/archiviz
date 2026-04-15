@@ -1,9 +1,5 @@
 
 .header {
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: cover;
-  min-height: 100%;
 
   &__wrapper {
     background-color: rgba($color: $dark, $alpha: .6);
@@ -12,6 +8,7 @@
     left: 0;
     width: 100%;
     z-index: 5;
+    transition: background-color .3s;
     &--active {
       background-color: $dark;
     }
@@ -21,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 30px;
+    padding: 20px 0;
   }
 
   &__logo {
@@ -34,76 +31,9 @@
     object-fit: cover;
   }
 
-  &__content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    gap: 20px;
-  }
 
-  &__pretitle {
-    @extend %Montserrat-500;
-    font-size: 60px;
-  }
-
-  &__title {
-    @extend %Montserrat-500;
-    font-size: 80px;
-    line-height: 1.2;
-    position: relative;
-
-    &::before {
-      top: 0;
-      left: 0;
-    }
-
-    &::after {
-      bottom: 0;
-      left: 0;
-    }
-
-    &::before,
-    &::after {
-      position: absolute;
-      content: '';
-      width: 100%;
-      height: 2px;
-      background-color: $white;
-    }
-  }
-
-  &__subtitle {
-    @extend %Montserrat-400;
-    font-size: 22px;
-  }
 }
 
-.header-style {
-  min-height: auto;
-  background-position: center center;
-
-  &__content {
-    min-height: auto;
-    padding: 250px 0 150px;
-  }
-
-  &__title {
-    font-size: 60px;
-    padding-top: 15px;
-
-    &::before {
-      width: 50%;
-      left: 50%;
-      transform: translateX(-50%);
-    }
-
-    &::after {
-      display: none;
-    }
-  }
-}
 
 .menu {
   &__btn {
@@ -175,15 +105,6 @@
 }
 
 @media (max-width: 1180px){
-  .header {
-    &__title {
-      font-size: 50px;
-    }
-
-    &__title {
-      font-size: 60px;
-    }
-  }
 
   .menu {
 
@@ -196,11 +117,6 @@
 
 @media (max-width: 990px) {
   .header {
-    &__inner {
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
     &__pretitle {
       font-size: 40px;
     }

@@ -90,7 +90,7 @@
 @media (max-width: 440px) {
   .project {
     &__inner {
-      grid-auto-rows: 300px;
+      grid-template-rows: 300px;
     }
   }
 }

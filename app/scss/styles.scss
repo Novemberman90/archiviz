@@ -1,18 +1,20 @@
-@import 'vars';
-@import 'fonts';
 @import 'reset';
 @import 'libs';
+@import 'fonts';
+@import 'vars';
 
 @import 'global';
 @import 'header';
 @import 'main';
 
 
+@import 'hero';
 @import 'about';
 @import 'service';
 @import 'projects';
 @import 'contact';
+@import 'cookie';
 
 
 @import 'footer';
-@import 'media';
+
