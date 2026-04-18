@@ -109,5 +109,33 @@ const addonElement = document.querySelector('.addon');
       });
     }
 
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+
+    // Открытие
+    document.querySelectorAll('.js-lightbox-trigger').forEach(trigger => {
+      trigger.addEventListener('click', () => {
+        lightboxImg.src = trigger.dataset.src;
+        lightboxImg.alt = trigger.dataset.alt;
+        lightbox.classList.add('is-open');
+        document.body.style.overflow = 'hidden'; // блокируем скролл страницы
+      });
+    });
+
+    // Закрытие — крестик, клик по фону, Escape
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', e => {
+      if (e.target === lightbox) closeLightbox(); // клик по фону, не по фото
+    });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeLightbox();
+    });
+
+    function closeLightbox() {
+      lightbox.classList.remove('is-open');
+      document.body.style.overflow = '';
+    }
 })
 

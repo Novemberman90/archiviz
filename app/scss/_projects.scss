@@ -1,14 +1,24 @@
 .project {
   padding: 100px 0 50px;
+  &__descr {
+    margin-bottom: 50px;
+    p{
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
   &__inner {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 400px;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px 10px;
   }
   &__item {
     position: relative;
     overflow: hidden;
+    flex: 0 0 calc((100% - 20px) / 3);
+    height: 400px;
     &:hover {
       img {
         transform: scale(1.2);
@@ -61,36 +71,33 @@
 }
 
 @media (max-width: 1180px) {
-  .project {
-    &__inner {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
+
 }
 
-@media (max-width: 990px) {
+@media (max-width: 992px) {
   .project {
     padding: 75px 0 50px;
-  }
-}
-
-@media (max-width: 748px) {
-  .project {
-    &__inner {
-      grid-template-columns: repeat(1, 1fr);
+    &__item {
+      flex: 0 0 calc((100% - 10px) / 2);
+      &:last-child {
+        flex: 0 0 100%;
+      }
     }
   }
 }
+
 @media (max-width: 578px) {
   .project {
     padding: 50px 0;
-  }
-}
-
-@media (max-width: 440px) {
-  .project {
-    &__inner {
-      grid-template-rows: 300px;
+      &__descr {
+      p {
+        margin-bottom: 10px;
+      }
+  
+      margin-bottom: 30px;
+    }
+    &__item {
+      flex: 0 0 100%;
     }
   }
 }

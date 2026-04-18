@@ -33,6 +33,23 @@ a {
   padding: 0 30px;
   margin: 0 auto;
 }
+.order-cta {
+  background-color: transparent;
+  border: 1px solid $green;
+  color: $white;
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .3s;
+  &:hover {
+    background-color: $green;
+    color: $white;
+  }
+  &:active {
+    opacity: 0.8;
+  }
+}
 
 .title-accent {
   background-color: $blue;
@@ -123,6 +140,36 @@ a {
   padding: 100px 0 50px;
 }
 
+.style-line {
+  margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  position: relative;
+  border-bottom: 1px solid $white;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-color: $blue;
+    width: 100px;
+    height: 3px;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: $blue;
+    left: 50%;
+    bottom: -5px;
+    transform: translateX(-50%) rotate(45deg);
+  }
+}
+
 @media (max-width: 990px) {
   .container {
     padding: 0 15px;
@@ -134,6 +181,7 @@ a {
     padding: 75px 0 50px;
   }
 }
+
 
 @media (max-width: 578px) {
   .title-accent {
