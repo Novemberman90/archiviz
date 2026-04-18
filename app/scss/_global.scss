@@ -55,6 +55,7 @@ a {
   background-color: $blue;
   padding: 10px 15px;
   @extend %Montserrat-500, %uppercase;
+  font-size: 24px;
   display: inline-block;
   margin-bottom: 50px;
   position: relative;
@@ -185,10 +186,15 @@ a {
 
 @media (max-width: 578px) {
   .title-accent {
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 25px;
   }
   .order-form {
     padding: 50px 0;
+  }
+}
+@media (max-width: 578px) {
+  body {
+    font-size: 15px;
   }
 }
