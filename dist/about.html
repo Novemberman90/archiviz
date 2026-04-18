@@ -92,6 +92,47 @@
         </div>
       </div>
     </search>
+    <section class="awards">
+      <div class="container">
+        <h2 class="awards__title">Нагороди та визнання</h2>
+        <ul class="awards__list">
+    
+          <li class="awards__item">
+              <!-- Обёртка с data-атрибутом -->
+            <div class="awards__img-wrap js-lightbox-trigger" data-src="./images/arhitektor-stratyuk-elena-project.jpg"
+              data-alt="Сертифікат НСАУ">
+              <img src="./images/arhitektor-stratyuk-elena-project.jpg" alt="Сертифікат НСАУ" class="awards__img" loading="lazy">
+            </div>
+
+            <div class="awards__info">
+              <span class="awards__year">2024</span>
+              <h3 class="awards__name">Національна спілка архітекторів України</h3>
+              <p class="awards__desc">
+                Олена Стратюк увійшла до ювілейного видання НСАУ
+                «Кращі архітектори України»
+              </p>
+              <a href="https://nsau.com.ua" class="awards__source" target="_blank" rel="noopener noreferrer">
+                nsau.com.ua
+              </a>
+            </div>
+          </li>
+    
+          <!-- Следующая награда -->
+          <li class="awards__item">
+            <div class="awards__img-wrap js-lightbox-trigger" data-src="./images/diplom-stratiuk.webp">
+              <img src="./images/diplom-stratiuk.webp" alt="Назва нагороди" class="awards__img" loading="lazy">
+            </div>
+            <div class="awards__info">
+              <span class="awards__year">2022</span>
+              <h3 class="awards__name">Назва організації</h3>
+              <p class="awards__desc">Опис нагороди</p>
+            </div>
+          </li>
+    
+        </ul>
+      </div>
+    </section>
+
     <section class="missions">
       <div class="container">
         <div class="addon">
@@ -99,7 +140,7 @@
             <h2 class="addon__title wow animate__fadeInLeft"><span>ArchiViz</span> - <br>студія сучасного <br> дизайну та
               архітектури</h2>
             <div class="addon__contnet">
-              <p class="addon__contnet-title wow animate__fadeInLeft">Довірте нам рішення проєктних питань</p>
+              <p class="addon__contnet-title style-line wow animate__fadeInLeft">Довірте нам рішення проєктних питань</p>
               <div class="addon__template" data-addon-counter>
                 <div class="addon__item">
                   <div class="addon__number" data-addon-num="110">0</div>
@@ -119,11 +160,73 @@
         </div>
       </div>
     </section>
+
+    <section class="workflow">
+      <div class="container">
+        <h3 class="title-accent wow animate__fadeInLeft">
+          Як ми працюємо
+        </h3>
+        <p class="workflow__subtitle style-line">
+          Простий та зрозумілий процес від першого контакту до готового результату
+        </p>
+        <div class="workflow__descr">
+          <p>
+            Ми цінуємо ваш час та довіру, тому розробили ефективний та прозорий процес роботи над кожним проєктом. Від першого контакту до отримання готових рендерів, ми крок за кроком супроводжуємо вас, забезпечуючи якість та задоволення від результату.
+          </p>
+        </div>
+    
+        <div class="workflow__list">
+
+          <div class="workflow__item">
+            <div class="workflow__card">
+              <span class="workflow__num">01</span>
+              <h3 class="workflow__item-title">Заявка та консультація</h3>
+              <p class="workflow__item-text">
+                Ви залишаєте заявку або зв’язуєтесь із нами. Обговорюємо задачі, стиль та бюджет.
+              </p>
+            </div>
+          </div>
+
+          <div class="workflow__item">
+            <div class="workflow__card">
+              <span class="workflow__num">02</span>
+              <h3 class="workflow__item-title">Аналіз та ТЗ</h3>
+              <p class="workflow__item-text">
+                Ми вивчаємо проект, формуємо технічне завдання та погоджуємо деталі.
+              </p>
+            </div>
+          </div>
+
+          <div class="workflow__item">
+            <div class="workflow__card">
+              <span class="workflow__num">03</span>
+              <h3 class="workflow__item-title">Створення візуалізації</h3>
+              <p class="workflow__item-text">
+                Розробляємо 3D-візуалізацію з урахуванням усіх побажань та правок.
+                Доводимо результат до ідеалу разом із вами.
+              </p>
+            </div>
+          </div>
+    
+          <div class="workflow__item">
+            <div class="workflow__card">
+              <span class="workflow__num">04</span>
+              <h3 class="workflow__item-title" >Готовий проект</h3>
+              <p class="workflow__item-text">Ви отримуєте фінальні рендери, готові до презентації або реалізації.</p>
+            </div>
+          </div>
+    
+        </div>
+
+        <a class="order-cta" href="#order">Замовити проект</a>
+      </div>
+    </section>
+
     <section class="gallery">
       <div class="container">
         <h3 class="title-accent wow animate__fadeInLeft">галерея</h3>
         <div class="gallery__descr">
-          <p>Ось деякі з наших найкращих <a href="#">проектів</a></p>
+          <p>Деякі з наших найкращих <a href="#">проектів</a></p>
         </div>
         <div class="gallery__inner">
           <div class="gallery__item wow animate__fadeIn" data-wow-delay=".1s">
@@ -165,8 +268,8 @@
         </div>
       </div>
     </section>
-    
-    <section class="order-form">
+
+    <section class="order-form" id="order">
       <div class="container">
         <h3 class="title-accent wow animate__fadeInLeft">Залиште заявку</h3>
         <form class="form" action="#">
@@ -309,7 +412,7 @@
     </a>
   </div>
   
-  <div class="cookie is-show" id="cookie">
+  <div class="cookie" id="cookie">
     <div class="cookie__inner">
       <p class="cookie__text">Ми використовуємо <a href="privacy-polic.html" target="_blank"
           rel="noopener noreferrer">файли cookie</a> для покращення вашого досвіду на нашому сайті. Продовжуючи
@@ -320,6 +423,12 @@
         <button class="cookie__button cookie__button--decline" type="button">Відхилити</button>
       </div>
     </div>
+  </div>
+  
+  <!-- Модалка — один раз в конце body -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд зображення">
+    <button class="lightbox__close" id="lightboxClose" aria-label="Закрити">✕</button>
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
   </div>
 
   <script src="./js/main.min.js"></script>
