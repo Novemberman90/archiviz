@@ -65,12 +65,41 @@
         </div>
       </div>
     </section>
-    
+
+    <section class="missions">
+      <div class="container">
+        <div class="addon">
+          <div class="addon__inner">
+            <h2 class="addon__title wow animate__fadeInLeft"><span>ArchiViz</span> - <br>студія сучасного <br> дизайну та
+              архітектури</h2>
+            <div class="addon__contnet">
+              <p class="addon__contnet-title style-line wow animate__fadeInLeft">Довірте нам рішення проєктних питань</p>
+              <div class="addon__template" data-addon-counter>
+                <div class="addon__item">
+                  <div class="addon__number addon__number--plus" data-addon-num="50">50</div>
+                  <p class="addon__number-title">виконаних проєктів</p>
+                </div>
+                <div class="addon__item">
+                  <div class="addon__number" data-addon-num="12">12</div>
+                  <p class="addon__number-title">років успішної роботи</p>
+                </div>
+                <div class="addon__item">
+                  <div class="addon__number addon__number--percent" data-addon-num="99">99</div>
+                  <p class="addon__number-title">задоволених замовників</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="project">
       <div class="container-fluid">
+        <h2 class="title-accent wow animate__fadeInLeft">Наші проєкти</h2>
         <div class="project__descr style-line">
-          Понад 50 реалізованих проєктів — від квартир до комерційних приміщень.
-          Кожен проєкт розроблявся індивідуально з урахуванням побажань замовника.
+          Кожен проєкт — це окрема історія. Квартири, приватні будинки, комерційні простори — понад 50 реалізованих об'єктів по
+          всій Україні та за кордоном
         </div>
         <div class="project__inner">
           <div class="project__item animate__animated animate__fadeIn">
@@ -227,8 +256,58 @@
             </div>
           </div>
         </div>
+        <div class="cta">
+          <h4 class="cta__title">Не знаєте який пакет обрати?</h4>
+          <p class="cta__text">Напишіть нам — підберемо оптимальне рішення для вашого проєкту</p>
+          <a class="cta__btn" href="#order">Отримати консультацію</a>
+        </div>
       </div>
     </section>
+    <section class="geography">
+      <div class="container">
+        <h2 class="title-accent wow animate__fadeInLeft">Географія проектів</h2>
+        <h3 class="geography__label style-line">Наші проєкти реалізовані в</h3>
+        <ul class="geography__list">
+        
+          <!-- Всегда видимые -->
+          <li class="geography__item">
+            <span class="geography__flag">🇺🇦</span>
+            <span class="geography__city">Харків</span>
+          </li>
+          <li class="geography__item">
+            <span class="geography__flag">🇺🇦</span>
+            <span class="geography__city">Київ</span>
+          </li>
+          <li class="geography__item">
+            <span class="geography__flag">🇮🇱</span>
+            <span class="geography__city">Ізраїль</span>
+          </li>
+        
+        </ul>
+        <!-- Скрытый блок — анимируется -->
+        <div class="geography__hidden" id="geographyHidden">
+          <li class="geography__item">
+            <span class="geography__flag">🇵🇱</span>
+            <span class="geography__city">Польща</span>
+          </li>
+          <li class="geography__item">
+            <span class="geography__flag">🇩🇪</span>
+            <span class="geography__city">Німеччина</span>
+          </li>
+          <li class="geography__item">
+            <span class="geography__flag">🇦🇹</span>
+            <span class="geography__city">Австрія</span>
+          </li>
+        </div>
+    
+        <!-- Кнопка только на мобильном -->
+        <button class="geography__toggle" type="button" id="geographyToggle">
+          <span class="geography__toggle-text geography__toggle-text--more is-show">Показати більше</span>
+          <span class="geography__toggle-text geography__toggle-text--less">Згорнути</span>
+        </button>
+      </div>
+    </section>
+
     <section class="order-form">
       <div class="container">
         <h3 class="title-accent wow animate__fadeInLeft">Залиште заявку</h3>
