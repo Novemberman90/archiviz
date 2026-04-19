@@ -173,24 +173,24 @@ const addonElement = document.querySelector('.addon');
         });
       });
 
-      /* Географія */
-      const geographyHidden = document.getElementById('geographyHidden');
+        /* Географія */
+      const geographyList = document.getElementById('geographyList');
       const geographyToggle = document.getElementById('geographyToggle');
 
-      if (geographyHidden && geographyToggle) {
+      if (geographyList && geographyToggle) {
         const textMore = geographyToggle.querySelector('.geography__toggle-text--more');
         const textLess = geographyToggle.querySelector('.geography__toggle-text--less');
 
         geographyToggle.addEventListener('click', () => {
-          const isOpen = geographyHidden.classList.toggle('is-open');
+          const isOpen = geographyList.classList.toggle('is-open');
 
-          // Плавность через реальную высоту контента
           if (isOpen) {
-            geographyHidden.style.maxHeight = geographyHidden.scrollHeight + 'px';
+            geographyList.style.maxHeight = geographyList.scrollHeight + 'px';
           } else {
-            geographyHidden.style.maxHeight = '0';
+            geographyList.style.maxHeight = '160px';
           }
 
+          geographyToggle.classList.toggle('is-open', isOpen);
           textMore.classList.toggle('is-show', !isOpen);
           textLess.classList.toggle('is-show', isOpen);
         });
