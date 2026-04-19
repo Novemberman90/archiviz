@@ -1,0 +1,35 @@
+ .cta {
+  &__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    @extend %Montserrat-500;
+    color: $white;
+  }
+
+  &__text {
+    margin-bottom: 25px;
+    letter-spacing: .04em;
+    @extend %Montserrat-500;
+    color: $blue;
+  }
+
+  &__btn {
+    background-color: transparent;
+    border: 1px solid $green;
+    color: $white;
+    padding: 10px 20px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $green;
+      color: $white;
+    }
+
+    &:active {
+      opacity: 0.8;
+    }
+  }
+ }

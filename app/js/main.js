@@ -173,6 +173,29 @@ const addonElement = document.querySelector('.addon');
         });
       });
 
+      /* Географія */
+      const geographyHidden = document.getElementById('geographyHidden');
+      const geographyToggle = document.getElementById('geographyToggle');
+
+      if (geographyHidden && geographyToggle) {
+        const textMore = geographyToggle.querySelector('.geography__toggle-text--more');
+        const textLess = geographyToggle.querySelector('.geography__toggle-text--less');
+
+        geographyToggle.addEventListener('click', () => {
+          const isOpen = geographyHidden.classList.toggle('is-open');
+
+          // Плавность через реальную высоту контента
+          if (isOpen) {
+            geographyHidden.style.maxHeight = geographyHidden.scrollHeight + 'px';
+          } else {
+            geographyHidden.style.maxHeight = '0';
+          }
+
+          textMore.classList.toggle('is-show', !isOpen);
+          textLess.classList.toggle('is-show', isOpen);
+        });
+      }
+
       /* Анимация */ 
       new WOW().init();
 });

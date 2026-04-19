@@ -75,9 +75,17 @@
   &__number {
     font-size: 65px;
     text-shadow: 8px 8px 0px rgba(150, 150, 150, 0.3);
-
+    &--plus {
+      &::after {
+        content: '+';
+      }
+    }
+    &--percent {
+      &::after {
+        content: '%';
+      }
+    }
     &::after {
-      content: '+';
       font-size: 65px;
       color: $white;
       text-shadow: 8px 8px 0px rgba(150, 150, 150, 0.3);

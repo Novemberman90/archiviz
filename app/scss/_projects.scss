@@ -1,6 +1,7 @@
 .project {
   padding: 100px 0 50px;
   &__descr {
+    text-align: left;
     margin-bottom: 50px;
     p{
       margin-bottom: 20px;
@@ -13,6 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px 10px;
+    margin-bottom: 50px;
   }
   &__item {
     position: relative;
@@ -69,6 +71,93 @@
     }
   }
 }
+.geography {
+  padding: 50px 0;
+   background-color: $black-ligth;
+  background-color: $black-ligth;
+
+  &__label {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: $white;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  ul.geography__list {
+    padding-bottom: 10px;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px 28px;
+    border: 1px solid $blue;
+    transition: border-color .3s, background-color .3s;
+
+    &:hover {
+      border-color: rgba($blue, 0.5);
+      background-color: rgba($blue, 0.05);
+    }
+  }
+
+  &__flag {
+    font-size: 26px;
+    line-height: 1;
+  }
+
+  &__city {
+    font-size: 14px;
+    color: $white;
+    letter-spacing: 0.04em;
+  }
+
+  &__hidden {
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    max-height: max-content;
+    transition: max-height .3s ease;
+
+    &.is-open {
+      max-height: 600px;
+    }
+  }
+  &__toggle {
+    display: none;
+    margin-top: 20px;
+    background: none;
+    border: 1px solid $blue;
+    color: $white;
+    font-size: 14px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: border-color .3s;
+
+    &:hover {
+     background-color: $blue;
+    }
+  }
+
+  &__toggle-text {
+    display: none;
+
+    &.is-show {
+      display: inline;
+    }
+  }
+}
 
 @media (max-width: 1180px) {
 
@@ -81,6 +170,24 @@
       flex: 0 0 calc((100% - 10px) / 2);
       &:last-child {
         flex: 0 0 100%;
+      }
+    }
+  }
+}
+@media (max-width: 768px) {
+  .geography {
+    &__hidden {
+      max-height: 0;
+    }
+    &__toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        background-color: $blue;
+      }
+      &:active {
+        opacity: .7;
       }
     }
   }
@@ -98,6 +205,11 @@
     }
     &__item {
       flex: 0 0 100%;
+    }
+  }
+  .geography {
+    &__item {
+      padding: 10px 20px;
     }
   }
 }
