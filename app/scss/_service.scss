@@ -62,4 +62,9 @@
   .service {
     padding: 50px 0;
   }
+  .price {
+    &__list {
+      text-align: left;
+    }
+  }
 }

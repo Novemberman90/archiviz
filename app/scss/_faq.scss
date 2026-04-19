@@ -1,0 +1,199 @@
+
+.faq {
+  padding: 100px 0 50px;
+  background-color: $black-ligth;
+
+  &__title {
+    @extend %Montserrat-700;
+    font-size: 22px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+
+  &__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  &__item {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid $blue;
+
+    &:hover {
+      .faq__subtitle {
+        color: $blue
+      }
+
+      .faq__icon {
+        path {
+          fill: $blue;
+        }
+      }
+    }
+
+    &:active {
+      .faq__subtitle {
+        opacity: 0.7;
+      }
+
+      .faq__icon {
+        opacity: 0.7;
+      }
+    }
+
+    &.is-open {
+      padding-bottom: 16px;
+      border-color: $blue;
+
+      .faq__subtitle {
+        color: $blue;
+      }
+
+      &:hover {
+        .faq__subtitle {
+          color: $blue;
+        }
+
+        .faq__icon {
+          path {
+            fill: $blue;
+          }
+        }
+      }
+    }
+  }
+
+  &__inner {
+    padding-right: 50px;
+    max-width: 1064px;
+    width: 100%;
+    padding: 0px 24px 0px 24px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+
+    &.is-open {
+      max-height: fit-content;
+      height: auto;
+    }
+  }
+
+  &__button {
+    padding: 12px 24px 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    transition: padding 0.3s;
+    text-align: left;
+    background-color: transparent;
+    border: none;
+  }
+
+  &__subtitle {
+    @extend %Montserrat-500;
+    font-size: 18px;
+    color: $white;
+    transition: margin-bottom 0.3s, color 0.3s;
+  }
+
+  &__answer {
+    font-size: 18px;
+
+    p {
+      margin-bottom: 10px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    ul {
+      margin: 0 0 20px;
+
+      li {
+        margin-bottom: 5px;
+        list-style: disc;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::marker {
+          color: $blue;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    transform: rotate(0deg);
+    transition: transform 0.3s;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+
+    path {
+      fill: $blue;
+    }
+
+    &--open {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+
+  .faq {
+    padding: 50px 0 50px;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__answer {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 440px) {
+
+  .faq {
+    &__pretitle-title {
+      font-size: 16px;
+    }
+
+    &__title {
+      font-size: 24px;
+      margin-bottom: 20px;
+      text-align: left;
+    }
+
+    &__subtitle {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 365px) {
+  .faq {
+    &__pretitle-title {
+      font-size: 14px;
+    }
+
+    &__subtitle {
+      font-size: 16px;
+    }
+
+    &__answer {
+      font-size: 14px;
+    }
+  }
+}

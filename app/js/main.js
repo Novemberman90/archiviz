@@ -84,8 +84,7 @@ const addonElement = document.querySelector('.addon');
     observer.observe(addonElement); // Слежу за нужным или любым другим элементом в конце страницы
   }
 
-  /* Анимация */
-  new WOW().init();
+
 
   const cookie = document.getElementById('cookie');
   
@@ -110,32 +109,71 @@ const addonElement = document.querySelector('.addon');
     }
 
 
+    /* Лайтбокс */
     const lightbox = document.getElementById('lightbox');
     const lightboxImg = document.getElementById('lightboxImg');
     const lightboxClose = document.getElementById('lightboxClose');
 
-    // Открытие
-    document.querySelectorAll('.js-lightbox-trigger').forEach(trigger => {
-      trigger.addEventListener('click', () => {
-        lightboxImg.src = trigger.dataset.src;
-        lightboxImg.alt = trigger.dataset.alt;
-        lightbox.classList.add('is-open');
-        document.body.style.overflow = 'hidden'; // блокируем скролл страницы
+    if (lightbox && lightboxImg && lightboxClose) {
+
+      function closeLightbox() {
+        lightbox.classList.remove('is-open-lightbox');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.js-lightbox-trigger').forEach(trigger => {
+        trigger.addEventListener('click', () => {
+          lightboxImg.src = trigger.dataset.src;
+          lightboxImg.alt = trigger.dataset.alt;
+          lightbox.classList.add('is-open-lightbox');
+          document.body.style.overflow = 'hidden';
+        });
       });
-    });
 
-    // Закрытие — крестик, клик по фону, Escape
-    lightboxClose.addEventListener('click', closeLightbox);
-    lightbox.addEventListener('click', e => {
-      if (e.target === lightbox) closeLightbox(); // клик по фону, не по фото
-    });
-    document.addEventListener('keydown', e => {
-      if (e.key === 'Escape') closeLightbox();
-    });
+      lightboxClose.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+      });
 
-    function closeLightbox() {
-      lightbox.classList.remove('is-open');
-      document.body.style.overflow = '';
     }
-})
+
+
+    /* Аккордеоны */
+    const accordeons = document.querySelectorAll("[data-accordion]");
+
+      accordeons.forEach(item => {
+        const btn = item.querySelector(".faq__button");
+        const content = item.querySelector("[data-accordion-content]");
+        const icon = item.querySelector(".faq__icon");
+
+        btn.addEventListener("click", () => {
+          const isOpening = !item.classList.contains("is-open");
+
+          // Закрываем все
+          accordeons.forEach(acc => {
+            acc.classList.remove("is-open");
+
+            const inner = acc.querySelector("[data-accordion-content]");
+            inner.style.maxHeight = null;
+
+            acc.querySelector(".faq__icon")
+              .classList.remove("faq__icon--open");
+          });
+
+          // Открываем текущий
+          if (isOpening) {
+            item.classList.add("is-open");
+            content.style.maxHeight = content.scrollHeight + "px";
+            icon.classList.add("faq__icon--open");
+            btn.setAttribute("aria-expanded", "true");
+          }
+        });
+      });
+
+      /* Анимация */ 
+      new WOW().init();
+});
 
