@@ -196,6 +196,40 @@ const addonElement = document.querySelector('.addon');
         });
       }
 
+      /* Слайдер відгуків */
+    const reviewsSwiper = document.querySelector('.reviews__swiper');
+
+    if (reviewsSwiper) {
+      new Swiper('.reviews__swiper', {
+        slidesPerView: 1.15,  // на мобильном виден краешек следующего
+        spaceBetween: 20,
+        centeredSlides: true,
+
+        navigation: {
+          prevEl: '.reviews__btn--prev',
+          nextEl: '.reviews__btn--next',
+        },
+
+        pagination: {
+          el: '.reviews__pagination',
+          clickable: true,
+        },
+
+        breakpoints: {
+          // планшет
+          640: {
+            slidesPerView: 1.5,
+            spaceBetween: 24,
+          },
+          // десктоп
+          1024: {
+            slidesPerView: 1.8,  // активная + края двух соседних
+            spaceBetween: 30,
+          },
+        },
+      });
+    }
+
       /* Анимация */ 
       new WOW().init();
 });
