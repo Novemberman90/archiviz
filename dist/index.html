@@ -6,6 +6,7 @@
   <title>ArchiViz – Студія архітектури, дизайну та 3D-візуалізацій</title>
   <meta name="description"
     content="ArchiViz – професійна студія, що пропонує послуги архітектурного дизайну та 3D-візуалізацій для втілення ваших ідей у реальність.">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/styles.min.css">
 </head>
 <body>
@@ -70,6 +71,42 @@
       </div>
     </div>
   </section>
+  <section class="services-preview">
+    <div class="container">
+      <h3 class="title-accent wow animate__fadeInLeft">Наші послуги</h3>
+
+      <ul class="services-preview__list">
+  
+        <li class="services-preview__item">
+          <div class="services-preview__icon">
+            <img src="./images/icon/project-icon.svg" alt="" aria-hidden="true">
+          </div>
+          <h3 class="services-preview__title">Дизайн-проєкт</h3>
+          <p class="services-preview__desc">Повний комплект документації від планування до специфікацій</p>
+          <a href="./services.html" class="services-preview__link">Детальніше</a>
+        </li>
+  
+        <li class="services-preview__item">
+          <div class="services-preview__icon">
+            <img src="./images/icon/3d.svg" alt="" aria-hidden="true">
+          </div>
+          <h3 class="services-preview__title">3D-візуалізація</h3>
+          <p class="services-preview__desc">Фотореалістичні рендери вашого майбутнього інтер'єру</p>
+          <a href="./services.html" class="services-preview__link">Детальніше</a>
+        </li>
+  
+        <li class="services-preview__item">
+          <div class="services-preview__icon">
+            <img src="./images/icon/support.svg" alt="" aria-hidden="true">
+          </div>
+          <h3 class="services-preview__title">Авторський супровід</h3>
+          <p class="services-preview__desc">Контроль якості на всіх етапах реалізації проєкту</p>
+          <a href="./services.html" class="services-preview__link">Детальніше</a>
+        </li>
+  
+      </ul>
+    </div>
+  </section>
   <section class="missions">
     <div class="container">
       <div class="addon">
@@ -102,7 +139,7 @@
   </section>
   <section class="last-proj">
     <div class="container">
-      <h3 class="title-accent wow animate__fadeInLeft">останні проєкти</h3>
+      <h2 class="title-accent wow animate__fadeInLeft">останні проєкти</h2>
       <div class="last-proj__descr">
         <p>
           Ми в ArchiViz завжди прагнемо досягти найвищої якості у кожному проєкті, який ми реалізуємо. Наша команда професіоналів працює над тим, щоб кожен клієнт отримав індивідуальний підхід та результат, який перевищить його очікування. Ми віримо, що кожен проєкт - це можливість створити щось унікальне та неповторне, і ми завжди готові прийняти цей виклик.
@@ -203,6 +240,89 @@
           </div>
         </li>
       </ul>
+    </div>
+  </section>
+  <section class="reviews">
+    <div class="container">
+      <h2 class="reviews__title title-accent">Відгуки</h2>
+      <div class="swiper reviews__swiper">
+        <div class="swiper-wrapper">
+  
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__card">
+              <img class="reviews__icon" src="./images/icon/brackets.svg" alt="">
+              <div class="reviews__text">Олена повністю переосмислила наш простір. Ми навіть не уявляли, що квартира може
+                виглядати так. Все було зроблено вчасно та з увагою до кожної деталі.</div>
+              <div class="reviews__author">
+                <div class="reviews__author-info">
+                  <span class="reviews__name">Марина К.</span>
+                  <span class="reviews__project">Квартира 85 м², Харків</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__card">
+              <img class="reviews__icon" src="./images/icon/brackets.svg" alt="">
+              <div class="reviews__text">Дуже задоволені результатом. Студія врахувала всі наші побажання і запропонувала
+                рішення, про які ми самі не здогадалися б. Рекомендуємо!</div>
+              <div class="reviews__author">
+                <div class="reviews__author-info">
+                  <span class="reviews__name">Андрій та Оксана В.</span>
+                  <span class="reviews__project">Приватний будинок 200 м², Київ</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__card">
+              <img class="reviews__icon" src="./images/icon/brackets.svg" alt="">
+              <div class="reviews__text">Замовляли 3D-візуалізацію перед ремонтом. Завдяки рендерам одразу побачили
+                результат і впевнено взялися за роботу. Якість на найвищому рівні.</div>
+              <div class="reviews__author">
+                <div class="reviews__author-info">
+                  <span class="reviews__name">Дмитро Л.</span>
+                  <span class="reviews__project">3D-візуалізація, Ізраїль</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <div class="swiper-slide reviews__slide">
+            <div class="reviews__card">
+              <img class="reviews__icon" src="./images/icon/brackets.svg" alt="">
+              <div class="reviews__text">Працювали дистанційно, але це зовсім не вплинуло на якість. Усі правки вносилися
+                швидко, комунікація була чіткою. Результатом дуже задоволені.</div>
+              <div class="reviews__author">
+                <div class="reviews__author-info">
+                  <span class="reviews__name">Наталія Р.</span>
+                  <span class="reviews__project">Дизайн-проєкт, Польща</span>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+        </div>
+        <div class="reviews__pagination swiper-pagination"></div>
+        <!-- Навигация -->
+        <div class="reviews__nav">
+          <button class="reviews__btn reviews__btn--prev" aria-label="Попередній відгук">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <button class="reviews__btn reviews__btn--next" aria-label="Наступний відгук">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+  
+      </div>
     </div>
   </section>
   <section class="order-form">
@@ -362,6 +482,7 @@
     </div>
   </div>
 
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   <script src="./js/main.min.js"></script>
 </body>
 </html>
