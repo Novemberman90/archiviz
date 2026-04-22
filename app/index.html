@@ -35,10 +35,10 @@
                 <a href="./projects.html" class="menu__link">Проєкти</a>
               </li>
               <li class="menu__item">
-                <a href="./contact.html" class="menu__link">Контакти</a>
+                <a href="#contact" class="menu__link">Контакти</a>
               </li>
               <li class="menu__item">
-                <a href="./contact.html" class="menu__link">Блог</a>
+                <a href="./blog.html" class="menu__link">Блог</a>
               </li>
             </ul>
             <ul class="menu__lang-list">
@@ -343,11 +343,11 @@
   </section>
   <div class="style-line"></div>
 </main>
-<footer class="footer">
+<footer class="footer" id="contact">
   <div class="container">
     <div class="footer__inner">
       <a class="footer__logo" href="#">
-        <img class="footer__logo-img" src="./images/icon/header-logo.svg" alt="archiviz logo">
+        <img class="footer__logo-img" src="./images/icon/header-logo.svg" alt="archiviz logo" itemprop="name">
       </a>
       <div class="footer__item footer__social">
         <h4 class="footer__item-title">Ми в соц.мережах:</h4>
@@ -399,7 +399,7 @@
       </div>
       <div class="footer__item footer__contact">
         <h4 class="footer__item-title">Контакти</h4>
-        <a class="footer__contact-link wow animate__fadeIn" href="tel:+380966059033">
+        <a class="footer__contact-link wow animate__fadeIn" href="tel:+380966059033" itemprop="telephone">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
             viewBox="0 0 24 24" version="1.1">
             <path
@@ -407,7 +407,7 @@
               fill="" />
           </svg>
           <span>+38 096 605-90-33</span></a>
-        <a class="footer__contact-link wow animate__fadeIn"  data-wow-delay=".1s" href="mailto:archiviz.biz@gmail.com">
+        <a class="footer__contact-link wow animate__fadeIn"  data-wow-delay=".1s" href="mailto:archiviz.biz@gmail.com" itemprop="email">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
             viewBox="0 0 24 24" version="1.1">
             <path
@@ -415,17 +415,17 @@
               fill="" />
           </svg>
            <span>archiviz.biz@gmail.com</span></a>
-        <address class="footer__adress wow animate__fadeIn"  data-wow-delay=".2s">
+        <address class="footer__adress wow animate__fadeIn"  data-wow-delay=".2s" itemscope itemtype="https://schema.org/PostalAddress">
           <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px"
             viewBox="0 0 24 32" version="1.1">
             <path
               d="M 13.480469 31.199219 C 16.6875 27.1875 24 17.460938 24 12 C 24 5.375 18.625 0 12 0 C 5.375 0 0 5.375 0 12 C 0 17.460938 7.3125 27.1875 10.519531 31.199219 C 11.289062 32.15625 12.710938 32.15625 13.480469 31.199219 Z M 12 8 C 14.210938 8 16 9.789062 16 12 C 16 14.210938 14.210938 16 12 16 C 9.789062 16 8 14.210938 8 12 C 8 9.789062 9.789062 8 12 8 Z M 12 8 "
               fill="" />
           </svg>
-          <span>
-            м. Харків, Україна <br>
-            вул. Клочківська, 111А
-          </span>
+          <div>
+            <span itemprop="addressLocality">м. Харків, Україна</span> <br>
+            <span itemprop="streetAddress">вул. Клочківська, 111А</span>
+          </div>
         </address>
       </div>
     </div>

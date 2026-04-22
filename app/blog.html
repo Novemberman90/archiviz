@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/styles.min.css">
-  <title>ArchiViz | Про нас</title>
+  <title>ArchiViz | Контакти</title>
 </head>
+
 <body>
   <header class="header" id="header">
     <div class="header__wrapper">
@@ -23,19 +25,19 @@
                   <a href="./index.html" class="menu__link">Головна</a>
                 </li>
                 <li class="menu__item">
-                  <a href="./about.html" class="menu__link menu__link--active">Про нас</a>
+                  <a href="./about.html" class="menu__link">Про нас</a>
                 </li>
                 <li class="menu__item">
                   <a href="./services.html" class="menu__link">Послуги</a>
                 </li>
                 <li class="menu__item">
-                  <a href="./projects.html" class="menu__link">Проєкти</a>
+                  <a href="./projects.html" class="menu__link ">Проєкти</a>
                 </li>
                 <li class="menu__item">
                   <a href="#contact" class="menu__link">Контакти</a>
                 </li>
                 <li class="menu__item">
-                  <a href="./blog.html" class="menu__link">Блог</a>
+                  <a href="./blog.html" class="menu__link menu__link--active">Блог</a>
                 </li>
               </ul>
               <ul class="menu__lang-list">
@@ -55,257 +57,174 @@
       </div>
     </div>
   </header>
-
   <main class="main">
-    <section class="hero hero--style">
+    <section class="hero hero--style" id="hero">
       <div class="hero__bg" style="background-image: url('./images/header-bg.avif');"></div>
       <div class="container">
         <div class="hero__content">
-          <p class="hero__title hero__title--style animate__animated animate__fadeIn">Про Нас</p>
+          <p class="hero__title hero__title--style animate__animated animate__fadeIn">Блог</p>
           <h1 class="hero__subtitle">Студия архитектуры, дизайна и 3D-визуализаций ArchiViz</h1>
         </div>
       </div>
     </section>
-
-    <search class="about">
+    <section class="blog-lead">
       <div class="container">
-        <div class="about__inner">
-          <div class="about__content">
-            <h3 class="title-accent wow animate__fadeInLeft">про нас</h3>
-            <div class="about__content-text animate__animated animate__fadeIn">
-              <p>
-                 Студія архітектури та дизайну ArchiViz заснована Оленою Стратюк в Харкові в 2014 році. Олена Вікторівна, архітектор з відзнакою її роботи увійшли в ювілейне видання НСАУ "Кращі архітектори України" 
-              </p>
-              <p>
-                Понад 10 років ми створюємо унікальний дизайн приміщень та архітектуру будівель. За нашими плечима багато успішних проектів, як приватних так і
-                муніцимальних. У кожному з них міститься оригінальна ідея, яка майстерно поєднана з функціональністью.
-                Ми регулярно удосконалюємо свою майстерність.
-              </p>
-              <p>
-                Замовляючи проєкт у нас, ви отримаєте професійно розроблену документацію та знижки на оздоблювальні матеріали та роботи у наших партнерів
-              </p>
-            </div>
-          </div>
-          <div class="about__img animate__animated animate__fadeIn">
-            <img src="./images/olena.jpg" alt="Olena Stratyuk photo">
-          </div>
-        </div>
-      </div>
-    </search>
-    <section class="missions">
-      <div class="container">
-        <div class="addon">
-          <div class="addon__inner">
-            <h2 class="addon__title wow animate__fadeInLeft"><span>ArchiViz</span> - <br>студія сучасного <br> дизайну та
-              архітектури</h2>
-            <div class="addon__contnet">
-              <p class="addon__contnet-title style-line wow animate__fadeInLeft">Довірте нам рішення проєктних питань</p>
-              <div class="addon__template" data-addon-counter>
-                <div class="addon__item">
-                  <div class="addon__number addon__number--plus" data-addon-num="50">50</div>
-                  <p class="addon__number-title">виконаних проєктів</p>
-                </div>
-                <div class="addon__item">
-                  <div class="addon__number" data-addon-num="12">12</div>
-                  <p class="addon__number-title">років успішної роботи</p>
-                </div>
-                <div class="addon__item">
-                  <div class="addon__number addon__number--percent" data-addon-num="99">99</div>
-                  <p class="addon__number-title">задоволених замовників</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="blog-lead__text">
+          Ділимося корисними порадами з дизайну інтер'єру, розповідаємо про завершені проєкти
+          та актуальні тенденції в архітектурі. Тут ви знайдете відповіді на питання,
+          які виникають до, під час та після створення вашого простору.
         </div>
       </div>
     </section>
-
-    <section class="awards ">
+    <div class="style-line"></div>
+    <section class="blog">
       <div class="container">
-        <h2 class="title-accent wow animate__fadeInLeft">Нагороди та визнання</h2>
-        <ul class="awards__list">
     
-          <li class="awards__item">
-              <!-- Обёртка с data-атрибутом -->
-            <div class="awards__img-wrap js-lightbox-trigger" data-src="./images/arhitektor-stratyuk-elena-project.jpg"
-              data-alt="Сертифікат НСАУ">
-              <img src="./images/arhitektor-stratyuk-elena-project.jpg" alt="Сертифікат НСАУ" class="awards__img" loading="lazy">
-            </div>
-
-            <div class="awards__info">
-              <span class="awards__year">2024</span>
-              <h3 class="awards__name">Національна спілка архітекторів України</h3>
-              <div class="awards__desc">
-                Олена Стратюк увійшла до ювілейного видання НСАУ
-                «Кращі архітектори України»
+        <div class="blog__grid">
+    
+          <article class="blog-card">
+    
+            <a href="./single-page.html" class="blog-card__img-box">
+              <img class="blog-card__img" src="./images/gallery/gallary-1.jpg" alt="CO2 холодильні системи">
+            </a>
+    
+            <div class="blog-card__content">
+    
+              <div class="blog-card__meta">
+                <span class="blog-card__date">12 березня 2026</span>
+                <span class="blog-card__author">Koriel Group</span>
               </div>
-              <div class="awards__text">
-                <p>
-                  Визнання Олени Стратюк як одного з кращих архітекторів України є свідченням її видатного внеску в розвиток архітектури та дизайну в країні. Її творчість відзначається не лише професійними колами, але й широкою громадськістю, що підтверджується численними нагородами та позитивними відгуками клієнтів.
-                </p>
-              </div>
-              <a href="https://nsau.com.ua" class="awards__source" target="_blank" rel="noopener noreferrer">
-                <span>nsau.com.ua</span>
-                <svg class="awards__source-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                  width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+    
+              <h3 class="blog-card__title">
+                <a href="./single-page.html">
+                  Чому CO₂ холодильні системи стають стандартом у Європі
+                </a>
+              </h3>
+    
+              <p class="blog-card__text">
+                Використання природного холодоагенту CO₂ дозволяє значно
+                знизити енергоспоживання та зробити холодильні системи
+                екологічнішими.
+              </p>
+    
+              <a class="blog-card__link" href="./single-page.html">
+                <span>Читати статтю</span>
+                <svg class="blog-card__link-icon" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
                   <path
                     d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
                     fill="" />
                 </svg>
+    
               </a>
-            </div>
-          </li>
     
-          <!-- Следующая награда -->
-          <li class="awards__item">
-            <div class="awards__img-wrap js-lightbox-trigger" data-src="./images/diplom-stratiuk.webp">
-              <img src="./images/diplom-stratiuk.webp" alt="Назва нагороди" class="awards__img" loading="lazy">
             </div>
-            <div class="awards__info">
-              <span class="awards__year">2022</span>
-              <h3 class="awards__name">Назва організації</h3>
-              <div class="awards__desc">Опис нагороди</div>
-              <div class="awards__text">
-                <p>
-                  Опис нагороди та її значення для Олени Стратюк. Можна розповісти про те, які проекти були відзначені цією нагородою, та як це вплинуло на її кар'єру та репутацію в архітектурній спільноті.
-                </p>
+          </article>
+          <article class="blog-card">
+    
+            <a href="./single-page.html" class="blog-card__img-box">
+              <img class="blog-card__img" src="./images/gallery/gallary-1.jpg" alt="CO2 холодильні системи">
+            </a>
+    
+            <div class="blog-card__content">
+    
+              <div class="blog-card__meta">
+                <span class="blog-card__date">12 березня 2026</span>
+                <span class="blog-card__author">Koriel Group</span>
               </div>
-            </div>
-          </li>
     
-        </ul>
-      </div>
-    </section>
-
-    <section class="workflow">
-      <div class="container">
-        <h2 class="title-accent wow animate__fadeInLeft">
-          Як ми працюємо
-        </h2>
-        <p class="workflow__subtitle style-line">
-          Простий та зрозумілий процес від першого контакту до готового результату
-        </p>
-        <div class="workflow__descr">
-          <p>
-            Ми цінуємо ваш час та довіру, тому розробили ефективний та прозорий процес роботи над кожним проєктом. Від першого контакту до отримання готових рендерів, ми крок за кроком супроводжуємо вас, забезпечуючи якість та задоволення від результату.
-          </p>
-        </div>
+              <h3 class="blog-card__title">
+                <a href="./single-page.html">
+                  Чому CO₂ холодильні системи стають стандартом у Європі
+                </a>
+              </h3>
     
-        <div class="workflow__list">
-
-          <div class="workflow__item">
-            <div class="workflow__card">
-              <span class="workflow__num">01</span>
-              <h3 class="workflow__item-title">Заявка та консультація</h3>
-              <p class="workflow__item-text">
-                Ви залишаєте заявку або зв’язуєтесь із нами. Обговорюємо задачі, стиль та бюджет.
+              <p class="blog-card__text">
+                Використання природного холодоагенту CO₂ дозволяє значно
+                знизити енергоспоживання та зробити холодильні системи
+                екологічнішими.
               </p>
-            </div>
-          </div>
-
-          <div class="workflow__item">
-            <div class="workflow__card">
-              <span class="workflow__num">02</span>
-              <h3 class="workflow__item-title">Аналіз та ТЗ</h3>
-              <p class="workflow__item-text">
-                Ми вивчаємо проект, формуємо технічне завдання та погоджуємо деталі.
-              </p>
-            </div>
-          </div>
-
-          <div class="workflow__item">
-            <div class="workflow__card">
-              <span class="workflow__num">03</span>
-              <h3 class="workflow__item-title">Створення візуалізації</h3>
-              <p class="workflow__item-text">
-                Розробляємо 3D-візуалізацію з урахуванням усіх побажань та правок.
-                Доводимо результат до ідеалу разом із вами.
-              </p>
-            </div>
-          </div>
     
-          <div class="workflow__item">
-            <div class="workflow__card">
-              <span class="workflow__num">04</span>
-              <h3 class="workflow__item-title" >Готовий проект</h3>
-              <p class="workflow__item-text">Ви отримуєте фінальні рендери, готові до презентації або реалізації.</p>
-            </div>
-          </div>
+              <a class="blog-card__link" href="./single-page.html">
+                <span>Читати статтю</span>
+                <svg class="blog-card__link-icon" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                  <path
+                    d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                    fill="" />
+                </svg>
     
-        </div>
+              </a>
+    
+            </div>
+          </article>
+          <article class="blog-card">
+    
+            <a href="./single-page.html" class="blog-card__img-box">
+              <img class="blog-card__img" src="./images/gallery/gallary-1.jpg" alt="CO2 холодильні системи">
+            </a>
+    
+            <div class="blog-card__content">
+    
+              <div class="blog-card__meta">
+                <span class="blog-card__date">12 березня 2026</span>
+                <span class="blog-card__author">Koriel Group</span>
+              </div>
+    
+              <h3 class="blog-card__title">
+                <a href="./single-page.html">
+                  Чому CO₂ холодильні системи стають стандартом у Європі
+                </a>
+              </h3>
+    
+              <p class="blog-card__text">
+                Використання природного холодоагенту CO₂ дозволяє значно
+                знизити енергоспоживання та зробити холодильні системи
+                екологічнішими.
+              </p>
+    
+              <a class="blog-card__link" href="./single-page.html">
+                <span>Читати статтю</span>
+                <svg class="blog-card__link-icon" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" width="15px" height="15px" viewBox="0 0 22 22" version="1.1">
+                  <path
+                    d="M 10.027344 4.527344 C 10.566406 3.992188 11.4375 3.992188 11.976562 4.527344 L 20.226562 12.777344 C 20.761719 13.316406 20.761719 14.1875 20.226562 14.726562 C 19.6875 15.261719 18.816406 15.261719 18.277344 14.726562 L 11 7.445312 L 3.722656 14.722656 C 3.183594 15.257812 2.3125 15.257812 1.773438 14.722656 C 1.238281 14.183594 1.238281 13.3125 1.773438 12.773438 L 10.023438 4.523438 Z M 10.027344 4.527344 "
+                    fill="" />
+                </svg>
+    
+              </a>
+    
+            </div>
+          </article>
 
-        <div class="cta">
-          <h4 class="cta__title">Не знаєте який пакет обрати?</h4>
-          <p class="cta__text">Напишіть нам — підберемо оптимальне рішення для вашого проєкту</p>
-          <a class="cta__btn" href="#order">Отримати консультацію</a>
         </div>
-      </div>
-    </section>
-
-    <section class="gallery">
-      <div class="container">
-        <h2 class="title-accent wow animate__fadeInLeft">галерея</h2>
-        <h4 class="gallery__subtitle style-line">Наші найкращі проекти</h4>
-        <div class="gallery__descr">
-          <p>
-            У нашій галереї ви знайдете вибір найкращих проектів, які ми реалізували для наших клієнтів. Кожен з них відображає нашу увагу до деталей, інноваційний підхід та прагнення створювати унікальні простори, що відповідають потребам та стилю життя наших замовників.
-          </p>
-        </div>
-        <div class="gallery__inner">
-          <div class="gallery__item wow animate__fadeIn" data-wow-delay=".1s">
-            <img src="./images/gallery/gallary-1.jpg" alt="gallery interior desing" class="gallery__img">
-            <a href="#" class="gallery__link">
-              <span>Посмотреть</span>
-            </a>
-          </div>
-          <div class="gallery__item wow animate__fadeIn" data-wow-delay=".1s">
-            <img src="./images/gallery/gallary-1.jpg" alt="gallery interior desing" class="gallery__img">
-            <a href="#" class="gallery__link">
-              <span>Посмотреть</span>
-            </a>
-          </div>
-          <div class="gallery__item wow animate__fadeIn" data-wow-delay=".1s">
-            <img src="./images/gallery/gallary-1.jpg" alt="gallery interior desing" class="gallery__img">
-            <a href="#" class="gallery__link">
-              <span>Посмотреть</span>
-            </a>
-          </div>
-          <div class="gallery__item wow animate__fadeIn" data-wow-delay=".1s">
-            <img src="./images/gallery/gallary-1.jpg" alt="gallery interior desing" class="gallery__img">
-            <a href="#" class="gallery__link">
-              <span>Посмотреть</span>
-            </a>
-          </div>
-          <div class="gallery__item wow animate__fadeIn" data-wow-delay=".1s">
-            <img src="./images/gallery/gallary-1.jpg" alt="gallery interior desing" class="gallery__img">
-            <a href="#" class="gallery__link">
-              <span>Посмотреть</span>
-            </a>
-          </div>
-          <div class="gallery__item wow animate__fadeIn" data-wow-delay=".1s">
-            <img src="./images/gallery/gallary-1.jpg" alt="gallery interior desing" class="gallery__img">
-            <a href="#" class="gallery__link">
-              <span>Посмотреть</span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="order-form" id="order">
-      <div class="container">
-        <h3 class="title-accent wow animate__fadeInLeft">Залиште заявку</h3>
-        <form class="form" action="#">
-          <label class="form__label">
-            <input class="form__input form__input--name" type="text" placeholder="Ім'я">
-          </label>
-          <label class="form__label">
-            <input class="form__input form__input--email" type="email" placeholder="Email">
-            <input class="form__input form__input--tel" type="tel" placeholder="+380">
-          </label>
-          <textarea class="form__textarea" placeholder="Повідомлення"></textarea>
-          <button class="form__submit" type="button">Відправити</button>
-        </form>
+    
+        <nav class="pagination" aria-label="Навігація по сторінках">
+        
+          <!-- Кнопка "Попередня" -->
+          <a class="pagination__item pagination__arrow pagination__arrow--prev pagination__arrow--disabled"
+            aria-label="Попередня сторінка" aria-disabled="true">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        
+          <!-- Номера страниц -->
+          <a class="pagination__item pagination__item--active" aria-current="page">1</a>
+          <a class="pagination__item">2</a>
+          <a class="pagination__item">3</a>
+        
+          <!-- Кнопка "Наступна" -->
+          <a class="pagination__item pagination__arrow pagination__arrow--next" aria-label="Наступна сторінка">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </a>
+        
+        </nav>
+    
       </div>
     </section>
     <div class="style-line"></div>
@@ -367,24 +286,24 @@
         <div class="footer__item footer__contact">
           <h4 class="footer__item-title">Контакти</h4>
           <a class="footer__contact-link wow animate__fadeIn" href="tel:+380966059033">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
-              viewBox="0 0 24 24" version="1.1">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+              height="24px" viewBox="0 0 24 24" version="1.1">
               <path
                 d="M 7.730469 1.152344 C 7.367188 0.28125 6.417969 -0.183594 5.507812 0.0664062 L 1.382812 1.191406 C 0.566406 1.414062 0 2.15625 0 3 C 0 14.597656 9.402344 24 21 24 C 21.84375 24 22.585938 23.433594 22.808594 22.617188 L 23.933594 18.492188 C 24.183594 17.582031 23.71875 16.632812 22.847656 16.269531 L 18.347656 14.394531 C 17.582031 14.078125 16.695312 14.296875 16.175781 14.9375 L 14.28125 17.25 C 10.984375 15.6875 8.3125 13.015625 6.75 9.71875 L 9.0625 7.828125 C 9.703125 7.304688 9.921875 6.421875 9.605469 5.65625 L 7.730469 1.15625 Z M 7.730469 1.152344 "
                 fill="" />
             </svg>
             <span>+38 096 605-90-33</span></a>
           <a class="footer__contact-link wow animate__fadeIn" data-wow-delay=".1s" href="mailto:archiviz.biz@gmail.com">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="24px"
-              viewBox="0 0 24 24" version="1.1">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+              height="24px" viewBox="0 0 24 24" version="1.1">
               <path
                 d="M 2.25 3 C 1.007812 3 0 4.007812 0 5.25 C 0 5.957031 0.332031 6.625 0.898438 7.050781 L 11.101562 14.699219 C 11.632812 15.097656 12.367188 15.097656 12.898438 14.699219 L 23.101562 7.050781 C 23.667969 6.625 24 5.957031 24 5.25 C 24 4.007812 22.992188 3 21.75 3 Z M 0 8.25 L 0 18 C 0 19.65625 1.34375 21 3 21 L 21 21 C 22.65625 21 24 19.65625 24 18 L 24 8.25 L 13.800781 15.898438 C 12.730469 16.703125 11.269531 16.703125 10.199219 15.898438 Z M 0 8.25 "
                 fill="" />
             </svg>
             <span>archiviz.biz@gmail.com</span></a>
           <address class="footer__adress wow animate__fadeIn" data-wow-delay=".2s">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px" height="32px"
-              viewBox="0 0 24 32" version="1.1">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+              height="32px" viewBox="0 0 24 32" version="1.1">
               <path
                 d="M 13.480469 31.199219 C 16.6875 27.1875 24 17.460938 24 12 C 24 5.375 18.625 0 12 0 C 5.375 0 0 5.375 0 12 C 0 17.460938 7.3125 27.1875 10.519531 31.199219 C 11.289062 32.15625 12.710938 32.15625 13.480469 31.199219 Z M 12 8 C 14.210938 8 16 9.789062 16 12 C 16 14.210938 14.210938 16 12 16 C 9.789062 16 8 14.210938 8 12 C 8 9.789062 9.789062 8 12 8 Z M 12 8 "
                 fill="" />
@@ -402,7 +321,6 @@
       </div>
     </div>
   </footer>
-
   <a class="go-top" href="#hero">
     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px" height="22px"
       viewBox="0 0 22 22" version="1.1">
@@ -411,7 +329,7 @@
         fill="" />
     </svg>
   </a>
-  
+
   <div class="contact-wiget">
     <a class="contact-wiget__link-item" href="mailto:korielsales@gmail.com">
       <svg width="68" height="68" viewBox="0 0 68 68" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -435,26 +353,21 @@
       </svg>
     </a>
   </div>
-  
+
   <div class="cookie" id="cookie">
     <div class="cookie__inner">
       <p class="cookie__text">Ми використовуємо <a href="privacy-polic.html" target="_blank"
           rel="noopener noreferrer">файли cookie</a> для покращення вашого досвіду на нашому сайті. Продовжуючи
         користуватися сайтом, ви погоджуєтеся з нашою політикою конфіденційності та використанням файлів cookie.</p>
-  
+
       <div class="cookie__button-box">
         <button class="cookie__button cookie__button--accept" type="button">Прийняти</button>
         <button class="cookie__button cookie__button--decline" type="button">Відхилити</button>
       </div>
     </div>
   </div>
-  
-  <!-- Модалка — один раз в конце body -->
-  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Перегляд зображення">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Закрити">✕</button>
-    <img class="lightbox__img" id="lightboxImg" src="" alt="">
-  </div>
 
   <script src="./js/main.min.js"></script>
 </body>
+
 </html>

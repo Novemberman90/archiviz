@@ -199,16 +199,14 @@ a {
 
 
 @media (max-width: 578px) {
+  body {
+      font-size: 15px;
+    }
   .title-accent {
     font-size: 18px;
     margin-bottom: 25px;
   }
   .order-form {
     padding: 50px 0;
-  }
-}
-@media (max-width: 578px) {
-  body {
-    font-size: 15px;
   }
 }

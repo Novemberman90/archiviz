@@ -185,6 +185,13 @@
     }
     a {
       color: $blue;
+      transition: all 0.3s;
+      &:hover {
+        color: $green;
+      }
+      &:active {
+        opacity: 0.8;
+      }
     }
   }
 
