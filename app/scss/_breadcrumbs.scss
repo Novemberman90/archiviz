@@ -1,0 +1,85 @@
+
+.breadcrumbs {
+  padding: 30px 0 20px;
+  @extend %Montserrat-400;
+  &__list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding-right: 32px;
+    position: relative;
+    color: $white;
+
+    &::after {
+      position: absolute;
+      content: '';
+      background-image: url('../../images/icon/chevron-breadcrumbs.svg');
+      width: 16px;
+      height: 16px;
+      right: 8px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    &:last-child {
+      padding-right: 0;
+      color: $blue;
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  &__link {
+    position: relative;
+    border-bottom: 1px solid transparent;
+    outline-offset: 3px;
+    transition: color 0.3s, border-color 0.3s, outline 0.3s;
+    color: inherit;
+    font-size: 16px;
+
+    &:hover {
+      color: $blue;
+
+      &::before {
+        left: -25px;
+      }
+
+      &::after {
+        right: -25px;
+      }
+    }
+
+    &:active {
+      opacity: .7;
+    }
+  }
+
+  &__link-sub-txt {
+    font-size: 12px;
+    position: absolute;
+    bottom: -2px;
+  }
+}
+
+@media (max-width: 578px) {
+  .breadcrumbs {
+    &__item {
+      padding-right: 22px;
+
+      &::after {
+        width: 14px;
+        height: 14px;
+        right: 4px;
+      }
+    }
+
+    &__link {
+      font-size: 14px;
+    }
+  }
+}
