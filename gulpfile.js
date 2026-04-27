@@ -63,7 +63,8 @@ function images() {
 function scripts() {
     return src ([
       'node_modules/wow.js/dist/wow.js',
-      'app/js/main.js'
+      'app/js/main.js',
+      'node_modules/swiper/swiper-bundle.js'
     ])
     //  src ([ 'node_modules\swiper\swiper-bundle.js', 'app/js/main.js',]) 
     // Так записываем когда нужно подключить несколько файлов js. Ситили аналогично, но лучше делать Import в scss

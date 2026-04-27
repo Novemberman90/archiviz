@@ -28,5 +28,8 @@
     "gulp-webp": "^4.0.1",
     "sass": "^1.69.5",
     "wow.js": "^1.2.2"
+  },
+  "dependencies": {
+    "swiper": "^12.1.3"
   }
 }
