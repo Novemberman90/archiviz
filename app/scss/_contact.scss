@@ -50,17 +50,28 @@
     gap: 20px;
   }
   &__input,
-  &__textarea {
+  &__textarea,
+    .wpcf7 input[type="url"],
+    .wpcf7 input[type="email"],
+    .wpcf7 input[type="tel"] {
     width: 100%;
     @extend %Montserrat-400;
     font-size: 14px;
-    background-color: $black-ligth;
+    background-color: $black-ligth !important;
     border: 1px solid $blue;
     border-radius: 5px;
     padding: 15px 18px;
     color: $white;
     transition: all .3s;
     outline: transparent;
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-box-shadow: 0 0 0px 1000px $black-ligth inset !important;
+      -webkit-text-fill-color: $white !important;
+      border: 1px solid $blue;
+      transition: background-color 5000s ease-in-out 0s;
+    }
     &::placeholder {
       @extend %Montserrat-400;
       font-size: 14px;
@@ -72,7 +83,9 @@
       border: 1px solid $green;
       outline: $green;
     }
+    
   }
+
   &__textarea {
     display: block;
     width: 100%;

@@ -56,18 +56,30 @@
   }
   &__item-title {
     font-size: 22px;
-    margin-bottom: 10px;
+    padding: 10px 0px;
+    a {
+      transition: color .4s;
+    }
+    &:hover {
+      a {
+        color: $blue;
+      }
+    }
   }
   &__item-link {
     transition: all .4s;
     display: inline-block;
+    padding: 10px;
+    overflow: hidden;
     svg {
-      transform: rotate(-90deg);
+      transform: rotate(-90deg) translateY(0%);
       stroke: $blue;
+      transition: all .4s;
     }
     &:hover {
-      transition: all .4s;
-      transform: translateX(50%);
+      svg{
+        transform: rotate(-90deg) translateY(50%);
+      }
     }
   }
   .pagination {
@@ -193,9 +205,6 @@
       }
     }
   }
-}
-@media (max-width: 768px) {
-  
 }
 
 @media (max-width: 578px) {
