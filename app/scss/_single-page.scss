@@ -223,7 +223,7 @@
       grid-column: 1 / -1;
       aspect-ratio: 16 / 9;
     }
-    &:nth-child(4n) {
+    &:nth-child(3n + 4) {
       grid-column: 1 / -1;
       aspect-ratio: 16 / 9;
     }
