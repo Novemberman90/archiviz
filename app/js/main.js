@@ -24,6 +24,49 @@ const openMenu = () => {
   document.body.classList.toggle('lock');
   menuBlock.classList.toggle('menu__block--active');
 }
+const closeMenu =()=>{
+    document.body.classList.remove('lock');
+    menuBlock.classList.remove('menu__block--active');
+    menuBtn.classList.remove('menu__btn--active');
+  }
+
+/* Скролл по якорям + закрытие меню */
+const navLinks = document.querySelectorAll('a[href^="#"], [data-scroll]');
+
+navLinks.forEach(link => {
+  link.addEventListener('click', (e) => {
+
+    // Кнопка "наверх" — отдельная логика уже есть выше, пропускаем
+    if (link.classList.contains('go-top')) return;
+
+    const href = link.getAttribute('href');
+
+    // Если ссылка типа href="#hero" — берём id
+    // Если data-scroll — берём значение атрибута
+    const targetId = link.dataset.scroll !== undefined
+      ? link.dataset.scroll || href?.replace('#', '')
+      : href?.replace('#', '');
+
+    if (!targetId) return;
+
+    const targetElement = document.getElementById(targetId);
+    if (!targetElement) return;
+
+    e.preventDefault();
+    closeMenu();
+
+    setTimeout(() => {
+      const headerHeight = document.querySelector('.header')?.offsetHeight || 0;
+      const top = targetElement.getBoundingClientRect().top + window.scrollY - headerHeight;
+
+      window.scrollTo({
+        top: top,
+        behavior: 'smooth',
+      });
+    }, 300);
+
+  });
+});
 
 /* При скроле меняется цвет хедера и активация кнопки НА ВЕРХ */
 const headerScroll = () => {
